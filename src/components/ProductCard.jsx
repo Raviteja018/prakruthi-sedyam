@@ -277,7 +277,7 @@ export default function ProductCard({ product, onAddToCart }) {
   };
 
   return (
-    <div className={`group relative bg-white border border-[#f2ebd9] rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:shadow-[#2a5a320c] hover:-translate-y-1 ${!product.inStock ? 'opacity-90' : ''}`}>
+    <div className={`group relative bg-white border border-[#f2ebd9] rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:shadow-[#2a5a320c] hover:-translate-y-1 product-card-glow ${!product.inStock ? 'opacity-90' : ''}`}>
       
       {/* Product Image / Custom Vector Container */}
       <div className="relative aspect-square w-full bg-[#fbf8f3] rounded-xl overflow-hidden mb-4 flex items-center justify-center border border-[#faf7f0]">
