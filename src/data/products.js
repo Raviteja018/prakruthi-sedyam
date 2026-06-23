@@ -1,0 +1,1312 @@
+// Products and categories dataset for Prakruthi Sedyam Store
+
+export const CATEGORY_GROUPS = [
+  {
+    id: "groceries",
+    name: "Groceries & Staples",
+    categories: [
+      "COOKING OIL & GHEE",
+      "DAL & PULSES",
+      "ATTA,FLOURS&RAVVA",
+      "RICE & RICE PRODUCTS",
+      "MILLETS",
+      "MILLET HOUSE & MIX",
+      "IDLY & UPMA RAVVA",
+      "JAGGERY,SUGAR&SALT"
+    ]
+  },
+  {
+    id: "spices",
+    name: "Spices & Condiments",
+    categories: [
+      "BRIYANI SPICES",
+      "MASALAS & SPICES",
+      "SPICY POWDERS & PICKLES",
+      "PAPAD"
+    ]
+  },
+  {
+    id: "snacks-drinks",
+    name: "Snacks & Beverages",
+    categories: [
+      "SNACKS",
+      "MILLET BISCUITS & RUSK",
+      "COFFE & TEA",
+      "Energy drink mix",
+      "CANDY & AMLA",
+      "ORGANIC JUICE",
+      "CHYAWANPRASH & JAM",
+      "READY TO COOK (Dosa mix,Pongal,Flakes..etc)",
+      "NOODLES & PASTA",
+      "HONEY"
+    ]
+  },
+  {
+    id: "personal-care",
+    name: "Personal Care",
+    categories: [
+      "SHAMPOO",
+      "SOAP",
+      "HAIR CARE",
+      "SKIN CARE",
+      "BODY CARE",
+      "BAMBOO TOOTH BRUSH & PASTE"
+    ]
+  },
+  {
+    id: "household-wellness",
+    name: "Household & Wellness",
+    categories: [
+      "PRAKRUTHIVANAM WATER FILTER",
+      "PRAKRUTHIVANAM RELIEF OILS",
+      "CLEANERS (Floor,Fabric,Dishwash ...etc)",
+      "CAST IRON COOKWARE",
+      "CLAY COOKWARE",
+      "Wooden products",
+      "ROOM FRESHENERS",
+      "Vegetable seeds",
+      "POOJA ITEMS"
+    ]
+  }
+];
+
+export const PRODUCTS = [
+
+  // ==================== PRAKRUTHIVANAM WATER FILTER ====================
+  {
+    id: "wf1",
+    name: "Prakruthivanam Water Filter",
+    category: "PRAKRUTHIVANAM WATER FILTER",
+    description: "Traditional gravity-based double-chamber water purifier. Zero electricity, zero chemicals. Keeps water naturally cool and pure.",
+    rating: 4.8,
+    reviews: 124,
+    sizeOptions: [{ name: "Standard", price: 13000 }],
+    inStock: true,
+    badge: "Top Seller",
+    type: "filter",
+    image: null
+  },
+  {
+    id: "wf2",
+    name: "Prakruthivanam Copper Plate",
+    category: "PRAKRUTHIVANAM WATER FILTER",
+    description: "Pure copper plate for water purification. Placing in filter tank adds Ayurvedic benefits of copper-infused water.",
+    rating: 4.6,
+    reviews: 48,
+    sizeOptions: [{ name: "Standard", price: 300 }],
+    inStock: true,
+    type: "filter",
+    image: null
+  },
+  {
+    id: "wf3",
+    name: "Prakruthivanam Water Filter Stand (Steel)",
+    category: "PRAKRUTHIVANAM WATER FILTER",
+    description: "Sturdy stainless steel stand designed for Prakruthivanam water filter. Rust-free, stable, and food-grade quality.",
+    rating: 4.5,
+    reviews: 36,
+    sizeOptions: [{ name: "Standard", price: 1250 }],
+    inStock: true,
+    type: "filter",
+    image: null
+  },
+
+  // ==================== COOKING OIL & GHEE ====================
+  {
+    id: "oil1",
+    name: "Prakruthivanam Groundnut Oil",
+    category: "COOKING OIL & GHEE",
+    description: "Cold-pressed wood-churned (Ganuga) groundnut oil. Unrefined, chemical-free, rich in natural nutrients and antioxidants.",
+    rating: 4.9,
+    reviews: 412,
+    sizeOptions: [{ name: "1 Litre", price: 240 }],
+    inStock: true,
+    badge: "100% Pure",
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil2",
+    name: "Prakruthivanam Coconut Oil",
+    category: "COOKING OIL & GHEE",
+    description: "Pure cold-pressed coconut oil. Ideal for cooking, hair, and skin. Extracted without heat or chemicals.",
+    rating: 4.8,
+    reviews: 289,
+    sizeOptions: [{ name: "1 Litre", price: 220 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil3",
+    name: "Prakruthivanam Black Gingelly Oil",
+    category: "COOKING OIL & GHEE",
+    description: "Wood-pressed black sesame oil with a rich, nutty flavor. High in antioxidants and traditional medicinal value.",
+    rating: 4.8,
+    reviews: 176,
+    sizeOptions: [{ name: "1 Litre", price: 300 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil4",
+    name: "Almond Oil Wood Pressed 110ml",
+    category: "COOKING OIL & GHEE",
+    description: "Premium wood-pressed almond oil for cooking and beauty care. Rich in Vitamin E and healthy fatty acids.",
+    rating: 4.7,
+    reviews: 94,
+    sizeOptions: [{ name: "110ml", price: 499 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil5",
+    name: "Prakruthivanam White Gingelly Oil",
+    category: "COOKING OIL & GHEE",
+    description: "Pure wood-pressed white sesame oil. Light flavor, high smoke point. Used in cooking and Ayurvedic therapies.",
+    rating: 4.7,
+    reviews: 143,
+    sizeOptions: [{ name: "1 Litre", price: 400 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil6",
+    name: "Prakruthivanam Safflower Oil",
+    category: "COOKING OIL & GHEE",
+    description: "Light and heart-healthy wood-pressed safflower (Kusuma) oil. High in Omega-6 fatty acids.",
+    rating: 4.6,
+    reviews: 87,
+    sizeOptions: [{ name: "1 Litre", price: 400 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil7",
+    name: "Prakruthivanam Castor Oil 250ml",
+    category: "COOKING OIL & GHEE",
+    description: "Pure cold-pressed castor oil. Used for hair growth, skin moisturizing and digestive wellness.",
+    rating: 4.6,
+    reviews: 72,
+    sizeOptions: [{ name: "250ml", price: 120 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil8",
+    name: "Prakruthivanam Mustard Oil 500ml",
+    category: "COOKING OIL & GHEE",
+    description: "Pungent and flavorful cold-pressed mustard oil. Perfect for pickles, curries and traditional cooking.",
+    rating: 4.7,
+    reviews: 118,
+    sizeOptions: [{ name: "500ml", price: 250 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil9",
+    name: "Prakruthivanam Virgin Coconut Oil",
+    category: "COOKING OIL & GHEE",
+    description: "Cold-pressed virgin coconut oil from fresh coconuts. Unrefined, retains full nutritional value and aroma.",
+    rating: 4.8,
+    reviews: 205,
+    sizeOptions: [{ name: "500ml", price: 250 }],
+    inStock: true,
+    badge: "Virgin Cold Pressed",
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil10",
+    name: "Pure & Sure Sunflower Oil",
+    category: "COOKING OIL & GHEE",
+    description: "Organic cold-pressed sunflower oil. Light taste, high Vitamin E content, ideal for everyday cooking.",
+    rating: 4.5,
+    reviews: 63,
+    sizeOptions: [{ name: "1 Litre", price: 460 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil11",
+    name: "Timbaktu Groundnut Oil",
+    category: "COOKING OIL & GHEE",
+    description: "Organic wood-pressed groundnut oil from Timbaktu Collective farms. Naturally rich in flavor and nutrients.",
+    rating: 4.8,
+    reviews: 156,
+    sizeOptions: [{ name: "1 Litre", price: 375 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil12",
+    name: "Extra Virgin Coconut Oil 500ml",
+    category: "COOKING OIL & GHEE",
+    description: "Premium extra virgin coconut oil. Cold-pressed from fresh coconuts, with natural fragrance intact.",
+    rating: 4.7,
+    reviews: 132,
+    sizeOptions: [{ name: "500ml", price: 549 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil13",
+    name: "Prakruthivanam Cow Ghee 200g",
+    category: "COOKING OIL & GHEE",
+    description: "Pure A2 desi cow ghee made using traditional Bilona method. Highly aromatic, digestive, and nourishing.",
+    rating: 4.9,
+    reviews: 328,
+    sizeOptions: [{ name: "200g", price: 850 }],
+    inStock: true,
+    badge: "Bilona Method",
+    type: "ghee",
+    image: null
+  },
+  {
+    id: "oil14",
+    name: "Surabhi Desi Cow Ghee",
+    category: "COOKING OIL & GHEE",
+    description: "Authentic desi cow ghee from Surabhi farms. Made from A2 milk with traditional hand-churning techniques.",
+    rating: 4.8,
+    reviews: 214,
+    sizeOptions: [{ name: "500g", price: 495 }],
+    inStock: true,
+    type: "ghee",
+    image: null
+  },
+  {
+    id: "oil15",
+    name: "Surabhi Buffalo Ghee 250g",
+    category: "COOKING OIL & GHEE",
+    description: "Rich and creamy buffalo ghee with a traditional taste. Great for making sweets and festive cooking.",
+    rating: 4.7,
+    reviews: 88,
+    sizeOptions: [{ name: "250g", price: 300 }],
+    inStock: true,
+    type: "ghee",
+    image: null
+  },
+  {
+    id: "oil16",
+    name: "Flax Seed Oil 250ml",
+    category: "COOKING OIL & GHEE",
+    description: "Cold-pressed flaxseed oil rich in Omega-3 ALA fatty acids. Ideal as a nutritional supplement or salad dressing.",
+    rating: 4.6,
+    reviews: 79,
+    sizeOptions: [{ name: "250ml", price: 345 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil17",
+    name: "Extra Virgin Olive Oil 250ml",
+    category: "COOKING OIL & GHEE",
+    description: "Premium cold-pressed extra virgin olive oil. Heart-healthy, full of polyphenols. Perfect for salads and light cooking.",
+    rating: 4.7,
+    reviews: 102,
+    sizeOptions: [{ name: "250ml", price: 549 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+  {
+    id: "oil18",
+    name: "Tharani Wood Cold Coconut Oil 1L",
+    category: "COOKING OIL & GHEE",
+    description: "Premium wood-pressed coconut oil by Tharani. Cold-pressed to retain all natural goodness and coconut aroma.",
+    rating: 4.8,
+    reviews: 141,
+    sizeOptions: [{ name: "1 Litre", price: 649 }],
+    inStock: true,
+    type: "oil",
+    image: null
+  },
+
+  // ==================== DAL & PULSES ====================
+  {
+    id: "dal1",
+    name: "Prakruthivanam Toor Dal",
+    category: "DAL & PULSES",
+    description: "Unpolished, pesticide-free pigeon peas. Loaded with protein, dietary fiber, and natural taste.",
+    rating: 4.7,
+    reviews: 95,
+    sizeOptions: [{ name: "1kg", price: 140 }],
+    inStock: true,
+    type: "dal",
+    image: null
+  },
+  {
+    id: "dal2",
+    name: "Prakruthivanam Moong Dal (Split)",
+    category: "DAL & PULSES",
+    description: "Naturally grown split green gram. Highly nutritious, easy to digest, free from synthetic color polishing.",
+    rating: 4.6,
+    reviews: 74,
+    sizeOptions: [{ name: "1kg", price: 160 }],
+    inStock: true,
+    type: "dal",
+    image: null
+  },
+  {
+    id: "dal3",
+    name: "Prakruthivanam Chana Dal",
+    category: "DAL & PULSES",
+    description: "Unpolished split chickpeas with high protein and fiber. Perfect for curries and traditional snacks.",
+    rating: 4.6,
+    reviews: 62,
+    sizeOptions: [{ name: "1kg", price: 130 }],
+    inStock: true,
+    type: "dal",
+    image: null
+  },
+  {
+    id: "dal4",
+    name: "Prakruthivanam Masoor Dal",
+    category: "DAL & PULSES",
+    description: "Red split lentils without synthetic processing. Rich in iron and protein, cooks quickly.",
+    rating: 4.5,
+    reviews: 58,
+    sizeOptions: [{ name: "1kg", price: 130 }],
+    inStock: true,
+    type: "dal",
+    image: null
+  },
+  {
+    id: "dal5",
+    name: "Prakruthivanam Black Chana",
+    category: "DAL & PULSES",
+    description: "Native black chickpeas rich in fiber and antioxidants. Ideal for sundal, curries, and salads.",
+    rating: 4.7,
+    reviews: 81,
+    sizeOptions: [{ name: "1kg", price: 120 }],
+    inStock: true,
+    type: "dal",
+    image: null
+  },
+  {
+    id: "dal6",
+    name: "Prakruthivanam Green Gram (Whole Moong)",
+    category: "DAL & PULSES",
+    description: "Whole green moong beans. Sprout them for extra nutrition or use in soups and traditional porridge.",
+    rating: 4.6,
+    reviews: 67,
+    sizeOptions: [{ name: "1kg", price: 160 }],
+    inStock: true,
+    type: "dal",
+    image: null
+  },
+
+  // ==================== ATTA, FLOURS & RAVVA ====================
+  {
+    id: "atta1",
+    name: "Prakruthivanam Wheat Atta",
+    category: "ATTA,FLOURS&RAVVA",
+    description: "Stone-ground whole wheat flour from organic wheat. High fiber, preserving natural bran and germ nutrients.",
+    rating: 4.7,
+    reviews: 138,
+    sizeOptions: [{ name: "1kg", price: 80 }, { name: "5kg", price: 380 }],
+    inStock: true,
+    type: "atta",
+    image: null
+  },
+  {
+    id: "atta2",
+    name: "Prakruthivanam Ragi Flour",
+    category: "ATTA,FLOURS&RAVVA",
+    description: "Stone-ground finger millet flour. Rich in calcium and iron. Ideal for ragi dosa, java, and rotis.",
+    rating: 4.8,
+    reviews: 145,
+    sizeOptions: [{ name: "1kg", price: 80 }],
+    inStock: true,
+    type: "flour",
+    image: null
+  },
+  {
+    id: "atta3",
+    name: "Prakruthivanam Jowar Flour",
+    category: "ATTA,FLOURS&RAVVA",
+    description: "Organic sorghum flour ground on stone mills. Gluten-free, high in fiber and protein.",
+    rating: 4.6,
+    reviews: 72,
+    sizeOptions: [{ name: "1kg", price: 70 }],
+    inStock: true,
+    type: "flour",
+    image: null
+  },
+  {
+    id: "atta4",
+    name: "Prakruthivanam Besan (Gram Flour)",
+    category: "ATTA,FLOURS&RAVVA",
+    description: "Fresh chickpea flour ground without chemicals. Perfect for pakoras, ladoo, and traditional sweets.",
+    rating: 4.6,
+    reviews: 87,
+    sizeOptions: [{ name: "1kg", price: 120 }],
+    inStock: true,
+    type: "flour",
+    image: null
+  },
+
+  // ==================== SHAMPOO ====================
+  {
+    id: "sham1",
+    name: "Prakruthivanam Herbal Shikakai Shampoo",
+    category: "SHAMPOO",
+    description: "Sulphate and paraben-free natural shampoo enriched with Shikakai, Reetha, Amla, and Aloe Vera.",
+    rating: 4.5,
+    reviews: 62,
+    sizeOptions: [{ name: "200ml", price: 180 }, { name: "400ml", price: 340 }],
+    inStock: true,
+    type: "shampoo",
+    image: null
+  },
+  {
+    id: "sham2",
+    name: "Neem & Bhringraj Shampoo",
+    category: "SHAMPOO",
+    description: "Ayurvedic shampoo with neem leaf extract, bhringraj, and fenugreek seeds. Controls hair fall naturally.",
+    rating: 4.6,
+    reviews: 88,
+    sizeOptions: [{ name: "200ml", price: 199 }],
+    inStock: true,
+    badge: "Anti Hair Fall",
+    type: "shampoo",
+    image: null
+  },
+  {
+    id: "sham3",
+    name: "Onion Hair Shampoo",
+    category: "SHAMPOO",
+    description: "Red onion extract shampoo for hair growth and volume. Free from SLS, parabens, and silicones.",
+    rating: 4.7,
+    reviews: 114,
+    sizeOptions: [{ name: "200ml", price: 220 }],
+    inStock: true,
+    type: "shampoo",
+    image: null
+  },
+
+  // ==================== SOAP ====================
+  {
+    id: "soap1",
+    name: "Handmade Neem & Turmeric Soap",
+    category: "SOAP",
+    description: "Cold processed bathing soap made with organic neem leaf extract, wild turmeric, and cold-pressed coconut oil.",
+    rating: 4.7,
+    reviews: 198,
+    sizeOptions: [{ name: "100g", price: 75 }, { name: "3 x 100g", price: 210 }],
+    inStock: true,
+    badge: "Chemical Free",
+    type: "soap",
+    image: null
+  },
+  {
+    id: "soap2",
+    name: "Charcoal & Rose Detox Soap",
+    category: "SOAP",
+    description: "Activated charcoal soap with rose petals and tea tree oil. Deep cleanses pores and removes toxins.",
+    rating: 4.6,
+    reviews: 124,
+    sizeOptions: [{ name: "100g", price: 85 }],
+    inStock: true,
+    type: "soap",
+    image: null
+  },
+  {
+    id: "soap3",
+    name: "Sandalwood & Saffron Soap",
+    category: "SOAP",
+    description: "Luxurious handcrafted soap with pure sandalwood paste and real saffron strands. Brightens skin naturally.",
+    rating: 4.8,
+    reviews: 92,
+    sizeOptions: [{ name: "100g", price: 110 }],
+    inStock: true,
+    badge: "Premium",
+    type: "soap",
+    image: null
+  },
+
+  // ==================== HONEY ====================
+  {
+    id: "hon1",
+    name: "Prakruthivanam Raw Forest Honey",
+    category: "HONEY",
+    description: "Wild forest honey from the Nallamala forests. Unpasteurized, unfiltered, preserving all natural enzymes and pollen.",
+    rating: 4.9,
+    reviews: 286,
+    sizeOptions: [{ name: "250g", price: 190 }, { name: "500g", price: 360 }, { name: "1kg", price: 690 }],
+    inStock: true,
+    badge: "100% Raw",
+    type: "honey",
+    image: null
+  },
+  {
+    id: "hon2",
+    name: "Multi-Flower Honey",
+    category: "HONEY",
+    description: "Natural multi-floral honey sourced from organic farms. Rich in enzymes and antioxidants.",
+    rating: 4.7,
+    reviews: 145,
+    sizeOptions: [{ name: "500g", price: 280 }, { name: "1kg", price: 530 }],
+    inStock: true,
+    type: "honey",
+    image: null
+  },
+  {
+    id: "hon3",
+    name: "Tulsi Honey",
+    category: "HONEY",
+    description: "Rare single-origin tulsi flower honey. Prized for its medicinal properties and distinctive aroma.",
+    rating: 4.8,
+    reviews: 98,
+    sizeOptions: [{ name: "250g", price: 220 }, { name: "500g", price: 420 }],
+    inStock: true,
+    badge: "Single Origin",
+    type: "honey",
+    image: null
+  },
+
+  // ==================== JAGGERY, SUGAR & SALT ====================
+  {
+    id: "jag1",
+    name: "Prakruthivanam Organic Jaggery Powder",
+    category: "JAGGERY,SUGAR&SALT",
+    description: "Pure chemical-free jaggery powder made from organic sugarcane juice without sulphur or washing soda.",
+    rating: 4.8,
+    reviews: 215,
+    sizeOptions: [{ name: "500g", price: 65 }, { name: "1kg", price: 120 }],
+    inStock: true,
+    type: "sugar",
+    image: null
+  },
+  {
+    id: "jag2",
+    name: "Prakruthivanam Palm Jaggery (Karuppati)",
+    category: "JAGGERY,SUGAR&SALT",
+    description: "Traditional palm jaggery made from wild palm sap. Rich in minerals, with deep caramel flavor.",
+    rating: 4.7,
+    reviews: 132,
+    sizeOptions: [{ name: "500g", price: 90 }, { name: "1kg", price: 170 }],
+    inStock: true,
+    type: "sugar",
+    image: null
+  },
+  {
+    id: "jag3",
+    name: "Himalayan Pink Salt",
+    category: "JAGGERY,SUGAR&SALT",
+    description: "Pure mineral-rich pink salt from the Himalayan ranges. Contains 84+ trace minerals, unprocessed and natural.",
+    rating: 4.7,
+    reviews: 165,
+    sizeOptions: [{ name: "500g", price: 80 }, { name: "1kg", price: 150 }],
+    inStock: true,
+    type: "sugar",
+    image: null
+  },
+  {
+    id: "jag4",
+    name: "Rock Salt (Sendha Namak)",
+    category: "JAGGERY,SUGAR&SALT",
+    description: "Pure rock salt commonly used during fasting. Free from chemicals and additives. Naturally mineral-rich.",
+    rating: 4.5,
+    reviews: 87,
+    sizeOptions: [{ name: "500g", price: 60 }, { name: "1kg", price: 110 }],
+    inStock: true,
+    type: "sugar",
+    image: null
+  },
+
+  // ==================== SNACKS ====================
+  {
+    id: "snk1",
+    name: "Millet & Dry Fruit Laddu",
+    category: "SNACKS",
+    description: "Nutritious traditional laddus made of foxtail millet, ragi, pure A2 ghee, organic jaggery, almonds, and cashews.",
+    rating: 4.8,
+    reviews: 110,
+    sizeOptions: [{ name: "250g", price: 180 }, { name: "500g", price: 340 }],
+    inStock: true,
+    badge: "Healthy Sweet",
+    type: "snack",
+    image: null
+  },
+  {
+    id: "snk2",
+    name: "Millet Spicy Kara Boondi",
+    category: "SNACKS",
+    description: "Crispy snack made with gram flour and multi-millets, fried in wood-pressed groundnut oil. Perfectly seasoned.",
+    rating: 4.6,
+    reviews: 80,
+    sizeOptions: [{ name: "200g", price: 85 }],
+    inStock: true,
+    type: "snack",
+    image: null
+  },
+  {
+    id: "snk3",
+    name: "Ragi Muruku",
+    category: "SNACKS",
+    description: "Crunchy finger millet muruku fried in wood-pressed groundnut oil. Zero preservatives, zero maida.",
+    rating: 4.7,
+    reviews: 96,
+    sizeOptions: [{ name: "200g", price: 90 }],
+    inStock: true,
+    type: "snack",
+    image: null
+  },
+  {
+    id: "snk4",
+    name: "Roasted Makhana (Fox Nuts)",
+    category: "SNACKS",
+    description: "Lightly roasted lotus seeds with rock salt and herbs. High protein, low calorie superfood snack.",
+    rating: 4.8,
+    reviews: 143,
+    sizeOptions: [{ name: "100g", price: 120 }, { name: "200g", price: 230 }],
+    inStock: true,
+    badge: "Superfood",
+    type: "snack",
+    image: null
+  },
+
+  // ==================== HAIR CARE ====================
+  {
+    id: "hc1",
+    name: "Bhringraj & Rosemary Hair Oil",
+    category: "HAIR CARE",
+    description: "Traditional Ayurvedic formulation with cold-pressed sesame oil, infused with fresh Bhringraj, Brahmi, and Amla.",
+    rating: 4.8,
+    reviews: 115,
+    sizeOptions: [{ name: "100ml", price: 220 }, { name: "200ml", price: 410 }],
+    inStock: true,
+    type: "hair-care",
+    image: null
+  },
+  {
+    id: "hc2",
+    name: "Onion Black Seed Hair Oil",
+    category: "HAIR CARE",
+    description: "Powerful blend of red onion extract and black seed (Kalonji) oil to stimulate hair follicles and reduce thinning.",
+    rating: 4.7,
+    reviews: 132,
+    sizeOptions: [{ name: "100ml", price: 199 }, { name: "200ml", price: 380 }],
+    inStock: true,
+    badge: "Anti Hair Fall",
+    type: "hair-care",
+    image: null
+  },
+  {
+    id: "hc3",
+    name: "Hibiscus Hair Conditioner",
+    category: "HAIR CARE",
+    description: "Natural hibiscus flower and aloe vera hair conditioner. Detangles, moisturizes and adds natural shine.",
+    rating: 4.6,
+    reviews: 78,
+    sizeOptions: [{ name: "200ml", price: 185 }],
+    inStock: true,
+    type: "hair-care",
+    image: null
+  },
+
+  // ==================== SKIN CARE ====================
+  {
+    id: "sk1",
+    name: "Kumkumadi & Saffron Face Cream",
+    category: "SKIN CARE",
+    description: "Precious skin brightening cream formulated with Kashmiri saffron, sandalwood extracts, and pure goat milk.",
+    rating: 4.7,
+    reviews: 93,
+    sizeOptions: [{ name: "50g", price: 380 }],
+    inStock: true,
+    badge: "Premium Beauty",
+    type: "skin-care",
+    image: null
+  },
+  {
+    id: "sk2",
+    name: "Multani Mitti & Rose Face Pack",
+    category: "SKIN CARE",
+    description: "Purifying clay face pack with rose water and turmeric. Removes tan, controls oil, tightens pores naturally.",
+    rating: 4.6,
+    reviews: 104,
+    sizeOptions: [{ name: "100g", price: 120 }, { name: "200g", price: 220 }],
+    inStock: true,
+    type: "skin-care",
+    image: null
+  },
+  {
+    id: "sk3",
+    name: "Aloe Vera & Turmeric Face Gel",
+    category: "SKIN CARE",
+    description: "Soothing aloe vera gel with wild turmeric extract. Anti-inflammatory, hydrating, and brightening for all skin types.",
+    rating: 4.7,
+    reviews: 118,
+    sizeOptions: [{ name: "100g", price: 150 }],
+    inStock: true,
+    type: "skin-care",
+    image: null
+  },
+
+  // ==================== BAMBOO TOOTH BRUSH & PASTE ====================
+  {
+    id: "bt1",
+    name: "Bamboo Toothbrush & Herbal Paste Combo",
+    category: "BAMBOO TOOTH BRUSH & PASTE",
+    description: "Includes 2 biodegradable bamboo toothbrushes and 100g charcoal & clove herbal paste. Fluoride-free.",
+    rating: 4.6,
+    reviews: 104,
+    sizeOptions: [{ name: "Single Pack", price: 150 }, { name: "Family Pack (4 brushes + 2 paste)", price: 450 }],
+    inStock: true,
+    type: "hygiene",
+    image: null
+  },
+  {
+    id: "bt2",
+    name: "Charcoal Herbal Toothpaste",
+    category: "BAMBOO TOOTH BRUSH & PASTE",
+    description: "Activated charcoal toothpaste with clove, neem, and mint. Natural whitening without harsh abrasives.",
+    rating: 4.5,
+    reviews: 86,
+    sizeOptions: [{ name: "100g", price: 99 }],
+    inStock: true,
+    type: "hygiene",
+    image: null
+  },
+
+  // ==================== Vegetable seeds ====================
+  {
+    id: "vs1",
+    name: "Desi Heirloom Vegetable Seeds Pack",
+    category: "Vegetable seeds",
+    description: "A collection of 10 native varieties of organic vegetable seeds (Tomato, Brinjal, Chilli, Ladyfinger, Gourds).",
+    rating: 4.4,
+    reviews: 58,
+    sizeOptions: [{ name: "10 Varieties Pack", price: 199 }],
+    inStock: true,
+    type: "seeds",
+    image: null
+  },
+  {
+    id: "vs2",
+    name: "Leafy Greens Seeds Pack",
+    category: "Vegetable seeds",
+    description: "Organic seeds of Spinach, Fenugreek, Coriander, Amaranth, and Drumstick leaves for home gardening.",
+    rating: 4.5,
+    reviews: 47,
+    sizeOptions: [{ name: "5 Varieties Pack", price: 120 }],
+    inStock: true,
+    type: "seeds",
+    image: null
+  },
+
+  // ==================== Wooden products ====================
+  {
+    id: "wp1",
+    name: "Neem Wood Cooking Spatula Set",
+    category: "Wooden products",
+    description: "Handcrafted 4-piece kitchen stirring spoon set made from single piece medicinal neem wood. Antibacterial and non-toxic.",
+    rating: 4.7,
+    reviews: 87,
+    sizeOptions: [{ name: "4 Spatula Set", price: 290 }],
+    inStock: true,
+    type: "wooden",
+    image: null
+  },
+  {
+    id: "wp2",
+    name: "Wooden Masher (Mathani)",
+    category: "Wooden products",
+    description: "Traditional hand-carved wooden churner for making buttermilk and lassi. Made from seasoned teak wood.",
+    rating: 4.6,
+    reviews: 54,
+    sizeOptions: [{ name: "Standard", price: 180 }],
+    inStock: true,
+    type: "wooden",
+    image: null
+  },
+  {
+    id: "wp3",
+    name: "Wooden Mortar & Pestle Set",
+    category: "Wooden products",
+    description: "Heavy-duty wooden mortar and pestle for grinding fresh spices. Brings out rich aroma in pastes and chutneys.",
+    rating: 4.8,
+    reviews: 93,
+    sizeOptions: [{ name: "Medium", price: 350 }, { name: "Large", price: 490 }],
+    inStock: true,
+    badge: "Handcrafted",
+    type: "wooden",
+    image: null
+  },
+
+  // ==================== MILLETS ====================
+  {
+    id: "mil1",
+    name: "Organic Foxtail Millet (Korralu)",
+    category: "MILLETS",
+    description: "Unpolished premium organic foxtail millet, high in dietary fiber, protein, and low glycemic index.",
+    rating: 4.8,
+    reviews: 167,
+    sizeOptions: [{ name: "1kg", price: 98 }, { name: "5kg", price: 470 }],
+    inStock: true,
+    badge: "Low GI",
+    type: "millet",
+    image: null
+  },
+  {
+    id: "mil2",
+    name: "Organic Kodo Millet (Arikelu)",
+    category: "MILLETS",
+    description: "Unpolished organic kodo millet rich in antioxidants and dietary fiber. Ideal for diabetic-friendly diets.",
+    rating: 4.7,
+    reviews: 94,
+    sizeOptions: [{ name: "1kg", price: 110 }],
+    inStock: true,
+    type: "millet",
+    image: null
+  },
+  {
+    id: "mil3",
+    name: "Organic Little Millet (Samalu)",
+    category: "MILLETS",
+    description: "Tiny nutrient-dense native millet. Rich in B vitamins and minerals. Great for pongal and upma.",
+    rating: 4.6,
+    reviews: 82,
+    sizeOptions: [{ name: "1kg", price: 120 }],
+    inStock: true,
+    type: "millet",
+    image: null
+  },
+  {
+    id: "mil4",
+    name: "Organic Barnyard Millet (Udalu)",
+    category: "MILLETS",
+    description: "High-fiber barnyard millet perfect for fasting days. Gluten-free, light on digestion and filling.",
+    rating: 4.6,
+    reviews: 76,
+    sizeOptions: [{ name: "1kg", price: 105 }],
+    inStock: true,
+    type: "millet",
+    image: null
+  },
+  {
+    id: "mil5",
+    name: "Organic Pearl Millet (Sajja)",
+    category: "MILLETS",
+    description: "Whole grain pearl millet (bajra) with high iron and energy content. Traditional staple of Telangana.",
+    rating: 4.7,
+    reviews: 108,
+    sizeOptions: [{ name: "1kg", price: 70 }, { name: "5kg", price: 330 }],
+    inStock: true,
+    type: "millet",
+    image: null
+  },
+  {
+    id: "mil6",
+    name: "Organic Finger Millet (Ragi)",
+    category: "MILLETS",
+    description: "Whole ragi grains high in calcium, iron, and natural fiber. Can be sprouted, ground, or cooked whole.",
+    rating: 4.8,
+    reviews: 189,
+    sizeOptions: [{ name: "1kg", price: 65 }, { name: "5kg", price: 310 }],
+    inStock: true,
+    badge: "Calcium Rich",
+    type: "millet",
+    image: null
+  },
+  {
+    id: "mil7",
+    name: "Organic Sorghum (Jowar)",
+    category: "MILLETS",
+    description: "Gluten-free whole sorghum grains high in antioxidants. Versatile grain for rotis, porridge and snacks.",
+    rating: 4.6,
+    reviews: 71,
+    sizeOptions: [{ name: "1kg", price: 70 }],
+    inStock: true,
+    type: "millet",
+    image: null
+  },
+
+  // ==================== MILLET HOUSE & MIX ====================
+  {
+    id: "mhm1",
+    name: "Sprouted Multimillet Dosa Mix",
+    category: "MILLET HOUSE & MIX",
+    description: "Fermented and dehydrated multi-millet dosa batter mix. Ready to prepare by just adding water.",
+    rating: 4.6,
+    reviews: 138,
+    sizeOptions: [{ name: "500g", price: 95 }],
+    inStock: true,
+    type: "ready-cook",
+    image: null
+  },
+  {
+    id: "mhm2",
+    name: "Millet Idli Mix",
+    category: "MILLET HOUSE & MIX",
+    description: "Healthy idli mix with foxtail and little millet blend. Soft, fluffy idlis ready in minutes. No preservatives.",
+    rating: 4.7,
+    reviews: 112,
+    sizeOptions: [{ name: "500g", price: 90 }],
+    inStock: true,
+    type: "ready-cook",
+    image: null
+  },
+  {
+    id: "mhm3",
+    name: "Millet Porridge Mix (Sathu Maavu)",
+    category: "MILLET HOUSE & MIX",
+    description: "Power-packed porridge mix of multiple millets, legumes, and dry fruits. Perfect breakfast for children and adults.",
+    rating: 4.8,
+    reviews: 165,
+    sizeOptions: [{ name: "250g", price: 120 }, { name: "500g", price: 220 }],
+    inStock: true,
+    badge: "Kids Favorite",
+    type: "ready-cook",
+    image: null
+  },
+  {
+    id: "mhm4",
+    name: "Multi Millet Roti Mix",
+    category: "MILLET HOUSE & MIX",
+    description: "Blend of bajra, jowar, ragi and wheat for soft, nutritious rotis. Easy to knead, perfect texture.",
+    rating: 4.6,
+    reviews: 97,
+    sizeOptions: [{ name: "1kg", price: 130 }],
+    inStock: true,
+    type: "ready-cook",
+    image: null
+  },
+
+  // ==================== MILLET BISCUITS & RUSK ====================
+  {
+    id: "mb1",
+    name: "Baked Millet Almond Biscuits",
+    category: "MILLET BISCUITS & RUSK",
+    description: "Crispy healthy biscuits baked with ragi, foxtail millet, whole wheat, almonds, and jaggery. No maida, no palm oil.",
+    rating: 4.7,
+    reviews: 156,
+    sizeOptions: [{ name: "200g", price: 90 }, { name: "500g Double Pack", price: 170 }],
+    inStock: true,
+    type: "biscuits",
+    image: null
+  },
+  {
+    id: "mb2",
+    name: "Ragi Rusk",
+    category: "MILLET BISCUITS & RUSK",
+    description: "Crunchy double-baked ragi and whole wheat rusks. Great with tea or coffee. No preservatives added.",
+    rating: 4.5,
+    reviews: 88,
+    sizeOptions: [{ name: "200g", price: 80 }],
+    inStock: true,
+    type: "biscuits",
+    image: null
+  },
+  {
+    id: "mb3",
+    name: "Multi Millet Cookies (Jaggery)",
+    category: "MILLET BISCUITS & RUSK",
+    description: "Soft cookies made from multi-millet flour, natural jaggery, and pure A2 ghee. Zero refined sugar.",
+    rating: 4.8,
+    reviews: 134,
+    sizeOptions: [{ name: "250g", price: 120 }],
+    inStock: true,
+    badge: "Zero Refined Sugar",
+    type: "biscuits",
+    image: null
+  },
+
+  // ==================== Other existing categories ====================
+  {
+    id: "tea1",
+    name: "Organic Lemongrass Green Tea",
+    category: "COFFE & TEA",
+    description: "Handpicked premium green tea leaves blended with refreshing shade-dried organic lemongrass stalks.",
+    rating: 4.7,
+    reviews: 79,
+    sizeOptions: [{ name: "100g", price: 140 }],
+    inStock: true,
+    type: "tea",
+    image: null
+  },
+  {
+    id: "tea2",
+    name: "Tulsi Ginger Herbal Tea",
+    category: "COFFE & TEA",
+    description: "Immunity-boosting herbal tea blend with organic tulsi leaves, dried ginger, and pepper. Caffeine-free.",
+    rating: 4.8,
+    reviews: 96,
+    sizeOptions: [{ name: "50g (25 bags)", price: 90 }],
+    inStock: true,
+    badge: "Immunity Boost",
+    type: "tea",
+    image: null
+  },
+  {
+    id: "poo1",
+    name: "Natural Guggal Pooja Dhoop Cones",
+    category: "POOJA ITEMS",
+    description: "100% natural dhoop cones made of organic cow dung, pure guggal resin, and natural herbs.",
+    rating: 4.8,
+    reviews: 120,
+    sizeOptions: [{ name: "30 Cones Pack", price: 99 }],
+    inStock: true,
+    type: "pooja",
+    image: null
+  },
+  {
+    id: "eng1",
+    name: "Sprouted Ragi & Almond Malt",
+    category: "Energy drink mix",
+    description: "Premium health drink mix of sprouted ragi, almonds, cardamoms, and cashews. Excellent breakfast drink.",
+    rating: 4.9,
+    reviews: 210,
+    sizeOptions: [{ name: "250g", price: 150 }, { name: "500g", price: 290 }],
+    inStock: true,
+    badge: "Best Seller",
+    type: "energy-mix",
+    image: null
+  },
+  {
+    id: "can1",
+    name: "Honey Dipped Amla Candy",
+    category: "CANDY & AMLA",
+    description: "Sun-dried fresh wild amla pieces soaked in forest raw honey. Loaded with Vitamin C for immunity.",
+    rating: 4.8,
+    reviews: 165,
+    sizeOptions: [{ name: "250g", price: 145 }, { name: "500g", price: 270 }],
+    inStock: true,
+    type: "candy",
+    image: null
+  },
+  {
+    id: "pap1",
+    name: "Handmade Sajja (Pearl Millet) Papad",
+    category: "PAPAD",
+    description: "Traditional sun-dried papads made with pearl millet flour, sesame seeds, and spices.",
+    rating: 4.5,
+    reviews: 54,
+    sizeOptions: [{ name: "200g (Approx 15 Pcs)", price: 70 }],
+    inStock: true,
+    type: "papad",
+    image: null
+  },
+  {
+    id: "rtc1",
+    name: "Ready-to-Cook Millet Pongal Mix",
+    category: "READY TO COOK (Dosa mix,Pongal,Flakes..etc)",
+    description: "Healthy instant breakfast mix of Kodo millet, moong dal, ginger, black pepper, and curry leaves.",
+    rating: 4.7,
+    reviews: 112,
+    sizeOptions: [{ name: "400g", price: 110 }],
+    inStock: true,
+    type: "ready-cook",
+    image: null
+  },
+  {
+    id: "noo1",
+    name: "Whole Wheat & Millet Noodles",
+    category: "NOODLES & PASTA",
+    description: "Healthy noodles made with multi-millets and whole wheat. Comes with zero-MSG natural spice tastemaker.",
+    rating: 4.6,
+    reviews: 130,
+    sizeOptions: [{ name: "180g", price: 75 }, { name: "4 x 180g Combo", price: 280 }],
+    inStock: true,
+    type: "noodles",
+    image: null
+  },
+  {
+    id: "ric1",
+    name: "Traditional Sonamasuri Raw Rice",
+    category: "RICE & RICE PRODUCTS",
+    description: "12-months aged organic Sonamasuri rice. Non-GMO, pesticide-free, cooks fluffy with authentic flavor.",
+    rating: 4.8,
+    reviews: 190,
+    sizeOptions: [{ name: "5kg", price: 420 }, { name: "10kg", price: 810 }],
+    inStock: true,
+    type: "rice",
+    image: null
+  },
+  {
+    id: "ric2",
+    name: "Red Rice (Navara)",
+    category: "RICE & RICE PRODUCTS",
+    description: "Heirloom Kerala red rice with natural bran intact. High fiber, naturally nutty flavor, rich in antioxidants.",
+    rating: 4.7,
+    reviews: 114,
+    sizeOptions: [{ name: "1kg", price: 120 }, { name: "5kg", price: 570 }],
+    inStock: true,
+    badge: "Heirloom Variety",
+    type: "rice",
+    image: null
+  },
+  {
+    id: "idl1",
+    name: "Organic Millet Idly Ravva",
+    category: "IDLY & UPMA RAVVA",
+    description: "Coarse semolina from organic foxtail and little millets. Ideal for soft, highly nutritious idlis.",
+    rating: 4.7,
+    reviews: 83,
+    sizeOptions: [{ name: "1kg", price: 95 }],
+    inStock: true,
+    type: "ravva",
+    image: null
+  },
+  {
+    id: "bod1",
+    name: "Pure Aloe Vera Gel (Cold-Pressed)",
+    category: "BODY CARE",
+    description: "100% natural aloe vera skin moisturizer and hair conditioner. No artificial colors or fragrances.",
+    rating: 4.6,
+    reviews: 140,
+    sizeOptions: [{ name: "150g", price: 130 }],
+    inStock: true,
+    type: "body-care",
+    image: null
+  },
+  {
+    id: "bri1",
+    name: "Biryani Spices Combo Pack",
+    category: "BRIYANI SPICES",
+    description: "Organic green cardamom, cloves, cinnamon bark, bay leaves, star anise, shahi jeera, and mace combo.",
+    rating: 4.8,
+    reviews: 90,
+    sizeOptions: [{ name: "100g Pack", price: 160 }],
+    inStock: true,
+    type: "spices",
+    image: null
+  },
+  {
+    id: "mas1",
+    name: "Lakadong Turmeric Powder",
+    category: "MASALAS & SPICES",
+    description: "High-curcumin (7%+) turmeric from Lakadong, Meghalaya. Extremely potent anti-inflammatory spice.",
+    rating: 4.9,
+    reviews: 245,
+    sizeOptions: [{ name: "250g", price: 140 }, { name: "500g", price: 260 }],
+    inStock: true,
+    badge: "High Curcumin",
+    type: "spices",
+    image: null
+  },
+  {
+    id: "pik1",
+    name: "Andhra Special Gongura Pickle",
+    category: "SPICY POWDERS & PICKLES",
+    description: "Tangy and spicy sorrel leaves pickle made in wood-pressed sesame oil with organic red chillies.",
+    rating: 4.9,
+    reviews: 180,
+    sizeOptions: [{ name: "250g", price: 120 }, { name: "500g", price: 230 }],
+    inStock: true,
+    badge: "Home Style",
+    type: "pickle",
+    image: null
+  },
+  {
+    id: "rel1",
+    name: "Prakruthivanam Joint Relief Oil",
+    category: "PRAKRUTHIVANAM RELIEF OILS",
+    description: "Soothing relief oil with sesame oil base infused with camphor, eucalyptus, and shallaki extracts.",
+    rating: 4.7,
+    reviews: 75,
+    sizeOptions: [{ name: "100ml", price: 175 }],
+    inStock: true,
+    type: "relief-oil",
+    image: null
+  },
+  {
+    id: "jui1",
+    name: "Pure Wood-Pressed Amla Juice",
+    category: "ORGANIC JUICE",
+    description: "100% pure cold-pressed wild amla juice. Sugar-free, loaded with natural Vitamin C. Just dilute 30ml.",
+    rating: 4.8,
+    reviews: 198,
+    sizeOptions: [{ name: "500ml", price: 160 }, { name: "1 Litre", price: 300 }],
+    inStock: true,
+    type: "juice",
+    image: null
+  },
+  {
+    id: "chya1",
+    name: "Ashtavarga Chyawanprash",
+    category: "CHYAWANPRASH & JAM",
+    description: "Premium immunity jam formulated with wild amla and 48 rare Himalayan herbs sweetened with forest honey.",
+    rating: 4.9,
+    reviews: 154,
+    sizeOptions: [{ name: "500g", price: 390 }, { name: "1kg", price: 750 }],
+    inStock: true,
+    badge: "Immunity Booster",
+    type: "jam",
+    image: null
+  },
+  {
+    id: "cln1",
+    name: "Soapnut Liquid Laundry Detergent",
+    category: "CLEANERS (Floor,Fabric,Dishwash ...etc)",
+    description: "Natural fabric wash concentrate derived from soapnuts (Reetha) and lemon oil. Biodegradable.",
+    rating: 4.6,
+    reviews: 82,
+    sizeOptions: [{ name: "500ml", price: 195 }, { name: "1 Litre", price: 370 }],
+    inStock: true,
+    type: "cleaner",
+    image: null
+  },
+  {
+    id: "ci1",
+    name: "Pre-seasoned Cast Iron Skillet",
+    category: "CAST IRON COOKWARE",
+    description: "Heavy-duty cast iron tawa seasoned with organic vegetable oil. Perfect for dosas, rotis, and pan-searing.",
+    rating: 4.8,
+    reviews: 210,
+    sizeOptions: [{ name: "10 Inch", price: 799 }, { name: "12 Inch", price: 999 }],
+    inStock: true,
+    badge: "Pre-seasoned",
+    type: "cookware",
+    image: null
+  },
+  {
+    id: "rf1",
+    name: "Citrus & Vetiver Room Spray",
+    category: "ROOM FRESHENERS",
+    description: "Aromatherapy room spray with pure essential oils of sweet orange, lemon, and root vetiver. Zero synthetic gas.",
+    rating: 4.5,
+    reviews: 49,
+    sizeOptions: [{ name: "150ml", price: 180 }],
+    inStock: true,
+    type: "freshener",
+    image: null
+  },
+  {
+    id: "cl1",
+    name: "Traditional Clay Biryani Pot with Lid",
+    category: "CLAY COOKWARE",
+    description: "Hand-thrown black clay pot fired in open fire pits. Retains full moisture and adds natural earthy alkalinity.",
+    rating: 4.7,
+    reviews: 140,
+    sizeOptions: [{ name: "3 Litres", price: 380 }, { name: "5 Litres", price: 550 }],
+    inStock: false,
+    badge: "Eco Handmade",
+    type: "claypot",
+    image: null
+  },
+  {
+    id: "df1",
+    name: "Premium Dry Fruit & Nut Mix",
+    category: "SNACKS",
+    description: "A premium mix of organic almonds, whole cashews, golden raisins, walnuts, and dry figs. Perfect daily snack.",
+    rating: 4.8,
+    reviews: 114,
+    sizeOptions: [{ name: "250g", price: 320 }, { name: "500g", price: 620 }],
+    inStock: true,
+    type: "nuts",
+    image: null
+  }
+];
