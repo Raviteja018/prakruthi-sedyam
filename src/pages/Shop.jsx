@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { useOutletContext } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { PRODUCTS } from '../data/products';
 import ProductCard from '../components/ProductCard';
 import CategorySidebar from '../components/CategorySidebar';
@@ -50,6 +50,44 @@ export default function Shop() {
     return result;
   }, [selectedCategory, searchQuery, sortBy]);
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 20;
+
+  // Reset page to 1 on filter changes
+  React.useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory, searchQuery, sortBy]);
+
+  // Scroll to top when page changes
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentPage]);
+
+  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+
+  const paginatedProducts = useMemo(() => {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredProducts.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  }, [filteredProducts, currentPage]);
+
+  const getPageNumbers = () => {
+    const pages = [];
+    if (totalPages <= 5) {
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i);
+      }
+    } else {
+      if (currentPage <= 3) {
+        pages.push(1, 2, 3, 4, '...', totalPages);
+      } else if (currentPage >= totalPages - 2) {
+        pages.push(1, '...', totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
+      } else {
+        pages.push(1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages);
+      }
+    }
+    return pages;
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       
@@ -58,7 +96,12 @@ export default function Shop() {
         <div>
           <h2 className="font-serif text-3xl font-bold text-[#1b3f22]">Organic Store</h2>
           <p className="text-xs text-gray-500 mt-1">
-            {selectedCategory ? `Showing products in: ${selectedCategory}` : 'Showing all organic categories'} ({filteredProducts.length} items)
+            {selectedCategory ? `Showing products in: ${selectedCategory}` : 'Showing all organic categories'}{' '}
+            {filteredProducts.length > 0 ? (
+              `(${Math.min(filteredProducts.length, (currentPage - 1) * ITEMS_PER_PAGE + 1)}-${Math.min(filteredProducts.length, currentPage * ITEMS_PER_PAGE)} of ${filteredProducts.length} items)`
+            ) : (
+              '(0 items)'
+            )}
           </p>
         </div>
 
@@ -91,7 +134,7 @@ export default function Shop() {
       </div>
 
       {/* Split layout: Sidebar and Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
         
         {/* Category sidebar (Desktop) */}
         <div className="hidden lg:block lg:col-span-1 sticky top-24 self-start max-h-[calc(100vh-120px)] overflow-y-auto no-scrollbar">
@@ -102,7 +145,7 @@ export default function Shop() {
         </div>
 
         {/* Product grid */}
-        <div className="lg:col-span-3">
+        <div className="lg:col-span-4">
           {filteredProducts.length === 0 ? (
             <div className="text-center py-16 bg-white border border-[#f2ebd9] rounded-3xl p-8 space-y-4">
               <span className="text-4xl block">🍃</span>
@@ -118,15 +161,83 @@ export default function Shop() {
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-              {filteredProducts.map(product => (
-                <ProductCard
-                  key={product.id}
-                  product={product}
-                  onAddToCart={addToCart}
-                />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+                {paginatedProducts.map(product => (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    onAddToCart={addToCart}
+                  />
+                ))}
+              </div>
+
+              {/* Pagination Controls */}
+              {totalPages > 1 && (
+                <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-[#f2ebd9]">
+                  <p className="text-xs text-gray-500 font-medium">
+                    Showing <span className="font-semibold text-gray-700">{(currentPage - 1) * ITEMS_PER_PAGE + 1}</span> to{" "}
+                    <span className="font-semibold text-gray-700">{Math.min(currentPage * ITEMS_PER_PAGE, filteredProducts.length)}</span> of{" "}
+                    <span className="font-semibold text-gray-700">{filteredProducts.length}</span> products
+                  </p>
+                  
+                  <div className="flex items-center gap-1.5 font-sans">
+                    {/* Previous Button */}
+                    <button
+                      type="button"
+                      onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                      disabled={currentPage === 1}
+                      className={`flex items-center justify-center p-2 rounded-xl border transition-all duration-300 cursor-pointer ${
+                        currentPage === 1
+                          ? "bg-gray-50 border-gray-100 text-gray-300 cursor-not-allowed"
+                          : "bg-white border-[#f2ebd9] text-[#2a5a32] hover:bg-[#e7f3e9] hover:border-[#2a5a32] hover:shadow-sm"
+                      }`}
+                    >
+                      <ChevronLeft size={16} />
+                    </button>
+
+                    {/* Page numbers */}
+                    {getPageNumbers().map((page, index) => {
+                      if (page === '...') {
+                        return (
+                          <span key={`dots-${index}`} className="px-3 py-1.5 text-xs text-gray-400 font-medium select-none">
+                            ...
+                          </span>
+                        );
+                      }
+                      return (
+                        <button
+                          key={page}
+                          type="button"
+                          onClick={() => setCurrentPage(page)}
+                          className={`text-xs px-3.5 py-1.5 font-bold rounded-xl border transition-all duration-300 cursor-pointer ${
+                            currentPage === page
+                              ? "bg-[#2a5a32] border-[#2a5a32] text-white shadow-sm"
+                              : "bg-white border-[#f2ebd9] text-gray-700 hover:bg-[#e7f3e9] hover:border-[#2a5a32]"
+                          }`}
+                        >
+                          {page}
+                        </button>
+                      );
+                    })}
+
+                    {/* Next Button */}
+                    <button
+                      type="button"
+                      onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                      disabled={currentPage === totalPages}
+                      className={`flex items-center justify-center p-2 rounded-xl border transition-all duration-300 cursor-pointer ${
+                        currentPage === totalPages
+                          ? "bg-gray-50 border-gray-100 text-gray-300 cursor-not-allowed"
+                          : "bg-white border-[#f2ebd9] text-[#2a5a32] hover:bg-[#e7f3e9] hover:border-[#2a5a32] hover:shadow-sm"
+                      }`}
+                    >
+                      <ChevronRight size={16} />
+                    </button>
+                  </div>
+                </div>
+              )}
+            </>
           )}
         </div>
       </div>

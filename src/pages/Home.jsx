@@ -29,13 +29,29 @@ const TESTIMONIALS = [
 ];
 
 // Inline leaf SVG for decorations
-function LeafSVG({ color = 'currentColor', className = '' }) {
+function LeafSVG({ color = 'currentColor', className = '', style = {} }) {
   return (
-    <svg className={className} viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} style={style} viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M20 58 C20 58 0 38 0 22 C0 6 20 4 20 4 C20 4 40 6 40 22 C40 38 20 58 20 58 Z" fill={color} />
       <path d="M20 56 V6" stroke="rgba(255,255,255,0.25)" strokeWidth="1.5" strokeLinecap="round" />
       <path d="M20 40 C26 36 32 34 34 30" stroke="rgba(255,255,255,0.18)" strokeWidth="1" strokeLinecap="round" />
       <path d="M20 32 C14 28 8 26 6 22" stroke="rgba(255,255,255,0.18)" strokeWidth="1" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+// Inline branch SVG for corner decorations
+function BranchSVG({ color = 'currentColor', className = '', style = {} }) {
+  return (
+    <svg className={className} style={style} viewBox="0 0 120 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 170 Q 50 110 80 30" stroke={color} strokeWidth="2.5" strokeLinecap="round" opacity="0.6" />
+      <path d="M35 140 Q 10 125 15 110 Q 30 110 41 128 Z" fill={color} opacity="0.75" />
+      <path d="M45 120 Q 75 115 70 100 Q 55 100 48 112 Z" fill={color} opacity="0.75" />
+      <path d="M52 95 Q 25 85 30 70 Q 45 70 56 84 Z" fill={color} opacity="0.75" />
+      <path d="M60 80 Q 90 75 85 60 Q 70 60 63 70 Z" fill={color} opacity="0.75" />
+      <path d="M68 55 Q 45 48 50 35 Q 63 35 71 47 Z" fill={color} opacity="0.75" />
+      <path d="M74 42 Q 98 40 92 28 Q 78 28 76 36 Z" fill={color} opacity="0.75" />
+      <path d="M80 30 Q 82 10 78 5 Q 70 12 80 30 Z" fill={color} opacity="0.75" />
     </svg>
   );
 }
@@ -250,22 +266,25 @@ export default function Home() {
       {/* ==================== TESTIMONIALS ==================== */}
       <section className="relative bg-[#1b3f22] text-[#fbf8f3] py-16 px-4 overflow-hidden">
 
-        {/* CSS falling leaves decorations (dark section) */}
-        <LeafSVG color="#2a5a32" className="nature-leaf w-8 h-12 left-[8%] top-0"
-          style={{ animationDuration: '12s', animationDelay: '0s' }} />
-        <LeafSVG color="#d4a373" className="nature-leaf w-6 h-9 left-[22%] top-0"
-          style={{ animationDuration: '16s', animationDelay: '3s' }} />
-        <LeafSVG color="#2a5a32" className="nature-leaf w-10 h-14 left-[45%] top-0"
-          style={{ animationDuration: '10s', animationDelay: '1.5s' }} />
-        <LeafSVG color="#469253" className="nature-leaf w-7 h-10 left-[67%] top-0"
-          style={{ animationDuration: '14s', animationDelay: '4.5s' }} />
-        <LeafSVG color="#d4a373" className="nature-leaf w-5 h-8 left-[85%] top-0"
-          style={{ animationDuration: '11s', animationDelay: '2s' }} />
-        <LeafSVG color="#2a5a32" className="nature-leaf w-9 h-13 left-[55%] top-0"
-          style={{ animationDuration: '18s', animationDelay: '6s' }} />
+        {/* Dynamic breathing background glow orbs */}
+        <div className="absolute top-10 left-12 w-64 h-64 bg-[#d4a373]/8 rounded-full blur-3xl breathe-anim pointer-events-none" />
+        <div className="absolute bottom-10 right-12 w-72 h-72 bg-[#2a5a32]/25 rounded-full blur-3xl breathe-anim pointer-events-none" style={{ animationDelay: '1.5s' }} />
 
-        {/* Background glow orb */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#2a5a32]/20 rounded-full blur-3xl nature-orb pointer-events-none" />
+        {/* Corner swaying foliage branch decorations */}
+        <BranchSVG color="#d4a373" className="absolute -left-8 top-4 w-28 h-40 opacity-25 pointer-events-none float-anim" style={{ transform: 'rotate(15deg)' }} />
+        <BranchSVG color="#2a5a32" className="absolute -right-8 bottom-4 w-28 h-40 opacity-40 pointer-events-none float-anim-slow" style={{ transform: 'rotate(-35deg) scaleX(-1)' }} />
+
+        {/* CSS short falling leaves decorations */}
+        <LeafSVG color="#2a5a32" className="nature-leaf-short w-8 h-12 left-[10%] top-0"
+          style={{ animationDuration: '8s', animationDelay: '0s' }} />
+        <LeafSVG color="#d4a373" className="nature-leaf-short w-6 h-9 left-[25%] top-0"
+          style={{ animationDuration: '11s', animationDelay: '2.5s' }} />
+        <LeafSVG color="#387642" className="nature-leaf-short w-9 h-13 left-[48%] top-0"
+          style={{ animationDuration: '7s', animationDelay: '1s' }} />
+        <LeafSVG color="#d4a373" className="nature-leaf-short w-5 h-8 left-[70%] top-0"
+          style={{ animationDuration: '10s', animationDelay: '3.5s' }} />
+        <LeafSVG color="#2a5a32" className="nature-leaf-short w-7 h-10 left-[85%] top-0"
+          style={{ animationDuration: '9s', animationDelay: '1.8s' }} />
 
         <div className="max-w-3xl mx-auto text-center space-y-6 relative z-10">
           <ScrollReveal direction="down">

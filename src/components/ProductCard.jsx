@@ -269,6 +269,17 @@ function ProductIcon({ type, className = "w-full h-full" }) {
 export default function ProductCard({ product, onAddToCart }) {
   const [selectedSizeIndex, setSelectedSizeIndex] = useState(0);
   const selectedSize = product.sizeOptions[selectedSizeIndex];
+  const [imageLoading, setImageLoading] = useState(true);
+  const imgRef = React.useRef(null);
+
+  // Check if image is already cached or reset loading state when image source changes
+  React.useEffect(() => {
+    if (imgRef.current && imgRef.current.complete) {
+      setImageLoading(false);
+    } else {
+      setImageLoading(true);
+    }
+  }, [product.image]);
 
   const handleAdd = () => {
     if (product.inStock) {
@@ -282,11 +293,19 @@ export default function ProductCard({ product, onAddToCart }) {
       {/* Product Image / Custom Vector Container */}
       <div className="relative aspect-square w-full bg-[#fbf8f3] rounded-xl overflow-hidden mb-4 flex items-center justify-center border border-[#faf7f0]">
         {product.image ? (
-          <img 
-            src={product.image} 
-            alt={product.name} 
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-          />
+          <>
+            {imageLoading && (
+              <div className="absolute inset-0 animate-shimmer" />
+            )}
+            <img 
+              ref={imgRef}
+              src={product.image} 
+              alt={product.name} 
+              onLoad={() => setImageLoading(false)}
+              onError={() => setImageLoading(false)}
+              className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${imageLoading ? 'opacity-0' : 'opacity-100'}`} 
+            />
+          </>
         ) : (
           <div className="p-2 w-full h-full flex items-center justify-center">
             <ProductIcon type={product.type} className="w-4/5 h-4/5 transition-transform duration-500 group-hover:scale-105" />
