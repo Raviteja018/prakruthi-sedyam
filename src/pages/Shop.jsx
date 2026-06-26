@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { Menu, X, ChevronLeft, ChevronRight } from 'lucide-react';
-import { PRODUCTS } from '../data/products';
+import { PRODUCTS, CATEGORY_GROUPS } from '../data/products';
 import ProductCard from '../components/ProductCard';
 import CategorySidebar from '../components/CategorySidebar';
 
@@ -25,7 +25,12 @@ export default function Shop() {
 
     // Filter by Category
     if (selectedCategory) {
-      result = result.filter(p => p.category === selectedCategory);
+      const group = CATEGORY_GROUPS.find(g => g.id === selectedCategory);
+      if (group) {
+        result = result.filter(p => group.categories.includes(p.category));
+      } else {
+        result = result.filter(p => p.category === selectedCategory);
+      }
     }
 
     // Filter by Search Query
@@ -96,7 +101,13 @@ export default function Shop() {
         <div>
           <h2 className="font-serif text-3xl font-bold text-[#1b3f22]">Organic Store</h2>
           <p className="text-xs text-gray-500 mt-1">
-            {selectedCategory ? `Showing products in: ${selectedCategory}` : 'Showing all organic categories'}{' '}
+            {selectedCategory ? (
+              `Showing products in: ${
+                CATEGORY_GROUPS.find(g => g.id === selectedCategory)?.name || selectedCategory
+              }`
+            ) : (
+              'Showing all organic categories'
+            )}{' '}
             {filteredProducts.length > 0 ? (
               `(${Math.min(filteredProducts.length, (currentPage - 1) * ITEMS_PER_PAGE + 1)}-${Math.min(filteredProducts.length, currentPage * ITEMS_PER_PAGE)} of ${filteredProducts.length} items)`
             ) : (

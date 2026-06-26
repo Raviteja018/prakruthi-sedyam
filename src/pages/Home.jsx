@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { Link, useNavigate, useOutletContext } from 'react-router-dom';
 import { ArrowRight, Leaf, Award, RefreshCw, ShieldCheck, Sparkles } from 'lucide-react';
 import { PRODUCTS } from '../data/products';
@@ -69,6 +69,64 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
 
+  const scrollContainerRef = useRef(null);
+
+  // Auto-scroll mobile featured categories
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
+    // Check if view is mobile/tablet (< 1024px)
+    const isMobile = window.innerWidth < 1024;
+    if (!isMobile) return;
+
+    let intervalId;
+
+    const startAutoScroll = () => {
+      intervalId = setInterval(() => {
+        if (!container) return;
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        if (maxScroll <= 0) return;
+
+        const firstCard = container.firstElementChild;
+        const step = firstCard ? firstCard.offsetWidth + 16 : 180; // card width + gap
+
+        let nextScroll = container.scrollLeft + step;
+        if (nextScroll >= maxScroll + 10) {
+          nextScroll = 0; // Wrap back to the beginning
+        }
+
+        container.scrollTo({
+          left: nextScroll,
+          behavior: 'smooth'
+        });
+      }, 3000);
+    };
+
+    const stopAutoScroll = () => {
+      clearInterval(intervalId);
+    };
+
+    // Pause on user interaction (touch/mouse swipe or hover)
+    container.addEventListener('touchstart', stopAutoScroll, { passive: true });
+    container.addEventListener('touchend', () => { stopAutoScroll(); startAutoScroll(); }, { passive: true });
+    container.addEventListener('mousedown', stopAutoScroll);
+    container.addEventListener('mouseup', () => { stopAutoScroll(); startAutoScroll(); });
+    container.addEventListener('mouseenter', stopAutoScroll);
+    container.addEventListener('mouseleave', () => { stopAutoScroll(); startAutoScroll(); });
+
+    startAutoScroll();
+
+    return () => {
+      stopAutoScroll();
+      if (container) {
+        container.removeEventListener('touchstart', stopAutoScroll);
+        container.removeEventListener('mousedown', stopAutoScroll);
+        container.removeEventListener('mouseenter', stopAutoScroll);
+      }
+    };
+  }, []);
+
   // Dynamic Bestsellers (4 items with high ratings)
   const bestsellers = useMemo(() => {
     return PRODUCTS.filter(p => p.badge && p.inStock).slice(0, 4);
@@ -102,7 +160,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-left max-w-xl animate-fade-in">
             <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Prakruthi Sedyam <span className="text-[#d4a373] italic">(Roots Organics)</span> Store
+              Prakruthi Sedyam <span className="text-[#d4a373] italic">(Prakruthi Vanam)</span> Store
             </h2>
 
             <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-light">
@@ -151,19 +209,23 @@ export default function Home() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {[
-            { name: "Cooking Oil & Ghee", category: "COOKING OIL & GHEE", img: "/images/cow_ghee.png", bg: "bg-[#faebdf]" },
-            { name: "Organic Honey", category: "HONEY", img: "/images/raw_honey.png", bg: "bg-amber-50" },
-            { name: "Dal & Pulses", category: "DAL & PULSES", img: "/images/millet_grains.png", bg: "bg-emerald-50" },
-            { name: "Native Millets", category: "MILLETS", img: "/images/millet_grains.png", bg: "bg-yellow-50" },
-            { name: "Clay Cookware", category: "CLAY COOKWARE", img: "/images/clay_pot.png", bg: "bg-orange-50" },
-            { name: "Ready to Cook", category: "READY TO COOK (Dosa mix,Pongal,Flakes..etc)", img: "/images/millet_grains.png", bg: "bg-rose-50" }
-          ].map((item, idx) => (
-            <ScrollReveal key={idx} direction="up" delay={idx * 80}>
+        <ScrollReveal direction="up" delay={80}>
+          <div ref={scrollContainerRef} className="flex overflow-x-auto lg:grid lg:grid-cols-9 gap-4 pb-4 px-2 no-scrollbar snap-x snap-mandatory scroll-smooth">
+            {[
+              { name: "Cooking Oil", category: "COOKING OIL", img: "/images/groundnut_oil.png", bg: "bg-[#faebdf]" },
+              { name: "Ghee", category: "GHEE", img: "/images/cow_ghee.png", bg: "bg-amber-50" },
+              { name: "Honey", category: "HONEY", img: "/images/raw_honey.png", bg: "bg-amber-50/40" },
+              { name: "Pulses", category: "PULSES", img: "/images/organic_pulses.png", bg: "bg-emerald-50" },
+              { name: "Millets", category: "MILLETS", img: "/images/millet_grains.png", bg: "bg-yellow-50" },
+              { name: "Spices & Condiments", category: "spices", img: "/images/organic_spices.png", bg: "bg-red-50" },
+              { name: "Personal Care", category: "personal-care", img: "/images/herbal_soap.png", bg: "bg-teal-50" },
+              { name: "Clay Cookware", category: "CLAY COOKWARE", img: "/images/clay_pot.png", bg: "bg-orange-50" },
+              { name: "Ready to Cook", category: "READY TO COOK (Dosa mix,Pongal,Flakes..etc)", img: "/images/millet_grains.png", bg: "bg-rose-50" }
+            ].map((item, idx) => (
               <div
+                key={idx}
                 onClick={() => handleFeaturedCategoryClick(item.category)}
-                className="group bg-white border border-[#f2ebd9] hover:border-[#2a5a32]/30 p-5 rounded-2xl shadow-xs cursor-pointer transition-all duration-400 flex flex-col items-center justify-between text-center min-h-[210px] category-card-hover"
+                className="flex-shrink-0 snap-start w-[145px] sm:w-[170px] lg:w-auto group bg-white border border-[#f2ebd9] hover:border-[#2a5a32]/30 p-5 rounded-2xl shadow-xs cursor-pointer transition-all duration-400 flex flex-col items-center justify-between text-center min-h-[210px] category-card-hover"
               >
                 <div className={`w-24 h-24 ${item.bg} rounded-full overflow-hidden flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-400 border border-[#f2ebd9]/50 shadow-xs`}>
                   <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
@@ -175,9 +237,9 @@ export default function Home() {
                   Shop Now <ArrowRight size={10} />
                 </span>
               </div>
-            </ScrollReveal>
-          ))}
-        </div>
+            ))}
+          </div>
+        </ScrollReveal>
       </section>
 
       {/* ==================== BESTSELLING PRODUCTS ==================== */}

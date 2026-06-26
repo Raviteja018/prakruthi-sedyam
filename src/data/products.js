@@ -5,8 +5,9 @@ export const CATEGORY_GROUPS = [
     "id": "groceries",
     "name": "Groceries & Staples",
     "categories": [
-      "COOKING OIL & GHEE",
-      "DAL & PULSES",
+      "COOKING OIL",
+      "GHEE",
+      "PULSES",
       "ATTA,FLOURS&RAVVA",
       "RICE & RICE PRODUCTS",
       "MILLETS",
@@ -87,7 +88,7 @@ export const PRODUCTS = [
     "inStock": true,
     "badge": "Top Seller",
     "type": "filter",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/Qi4OZYEX-379-674.webp"
+    "image": "/images/water_filter.png"
   },
   {
     "id": "wf2",
@@ -124,215 +125,9 @@ export const PRODUCTS = [
     "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/VAJCGpX6-400-400.webp"
   },
   {
-    "id": "oil1",
-    "name": "Prakruthivanam Groundnut Oil",
-    "category": "COOKING OIL & GHEE",
-    "description": "Cold-pressed wood-churned (Ganuga) groundnut oil. Unrefined, chemical-free, rich in natural nutrients and antioxidants.",
-    "rating": 4.9,
-    "reviews": 412,
-    "sizeOptions": [
-      {
-        "name": "1 Litre",
-        "price": 240
-      }
-    ],
-    "inStock": true,
-    "badge": "100% Pure",
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/Oos7sBj0.webp"
-  },
-  {
-    "id": "oil2",
-    "name": "Prakruthivanam Coconut Oil",
-    "category": "COOKING OIL & GHEE",
-    "description": "Pure cold-pressed coconut oil. Ideal for cooking, hair, and skin. Extracted without heat or chemicals.",
-    "rating": 4.8,
-    "reviews": 289,
-    "sizeOptions": [
-      {
-        "name": "1 Litre",
-        "price": 220
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/XKGQLtJr.webp"
-  },
-  {
-    "id": "oil3",
-    "name": "Prakruthivanam Black Gingelly Oil",
-    "category": "COOKING OIL & GHEE",
-    "description": "Wood-pressed black sesame oil with a rich, nutty flavor. High in antioxidants and traditional medicinal value.",
-    "rating": 4.8,
-    "reviews": 176,
-    "sizeOptions": [
-      {
-        "name": "1 Litre",
-        "price": 300
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/h8gLj8SY.jpeg"
-  },
-  {
-    "id": "oil4",
-    "name": "Almond Oil Wood Pressed 110ml",
-    "category": "COOKING OIL & GHEE",
-    "description": "Premium wood-pressed almond oil for cooking and beauty care. Rich in Vitamin E and healthy fatty acids.",
-    "rating": 4.7,
-    "reviews": 94,
-    "sizeOptions": [
-      {
-        "name": "110ml",
-        "price": 499
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/LSuB8WiE.webp"
-  },
-  {
-    "id": "oil5",
-    "name": "Prakruthivanam White Gingelly Oil",
-    "category": "COOKING OIL & GHEE",
-    "description": "Pure wood-pressed white sesame oil. Light flavor, high smoke point. Used in cooking and Ayurvedic therapies.",
-    "rating": 4.7,
-    "reviews": 143,
-    "sizeOptions": [
-      {
-        "name": "1 Litre",
-        "price": 400
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/Vyv8SXTP.webp"
-  },
-  {
-    "id": "oil6",
-    "name": "Prakruthivanam Safflower Oil",
-    "category": "COOKING OIL & GHEE",
-    "description": "Light and heart-healthy wood-pressed safflower (Kusuma) oil. High in Omega-6 fatty acids.",
-    "rating": 4.6,
-    "reviews": 87,
-    "sizeOptions": [
-      {
-        "name": "1 Litre",
-        "price": 400
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/ies9o5EX.webp"
-  },
-  {
-    "id": "oil7",
-    "name": "Prakruthivanam Castor Oil 250ml",
-    "category": "COOKING OIL & GHEE",
-    "description": "Pure cold-pressed castor oil. Used for hair growth, skin moisturizing and digestive wellness.",
-    "rating": 4.6,
-    "reviews": 72,
-    "sizeOptions": [
-      {
-        "name": "250ml",
-        "price": 120
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/DKdazTaM.jpeg"
-  },
-  {
-    "id": "oil8",
-    "name": "Prakruthivanam Mustard Oil 500ml",
-    "category": "COOKING OIL & GHEE",
-    "description": "Pungent and flavorful cold-pressed mustard oil. Perfect for pickles, curries and traditional cooking.",
-    "rating": 4.7,
-    "reviews": 118,
-    "sizeOptions": [
-      {
-        "name": "500ml",
-        "price": 250
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/QeBoqwCk.jpeg"
-  },
-  {
-    "id": "oil9",
-    "name": "Prakruthivanam Virgin Coconut Oil",
-    "category": "COOKING OIL & GHEE",
-    "description": "Cold-pressed virgin coconut oil from fresh coconuts. Unrefined, retains full nutritional value and aroma.",
-    "rating": 4.8,
-    "reviews": 205,
-    "sizeOptions": [
-      {
-        "name": "500ml",
-        "price": 250
-      }
-    ],
-    "inStock": true,
-    "badge": "Virgin Cold Pressed",
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/LVxjLHo6-400-400.webp"
-  },
-  {
-    "id": "oil10",
-    "name": "Pure & Sure Sunflower Oil",
-    "category": "COOKING OIL & GHEE",
-    "description": "Organic cold-pressed sunflower oil. Light taste, high Vitamin E content, ideal for everyday cooking.",
-    "rating": 4.5,
-    "reviews": 63,
-    "sizeOptions": [
-      {
-        "name": "1 Litre",
-        "price": 460
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/dx9UDyU2.jpeg"
-  },
-  {
-    "id": "oil11",
-    "name": "Timbaktu Groundnut Oil",
-    "category": "COOKING OIL & GHEE",
-    "description": "Organic wood-pressed groundnut oil from Timbaktu Collective farms. Naturally rich in flavor and nutrients.",
-    "rating": 4.8,
-    "reviews": 156,
-    "sizeOptions": [
-      {
-        "name": "1 Litre",
-        "price": 375
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/GS4r5JT9.jpeg"
-  },
-  {
-    "id": "oil12",
-    "name": "Extra Virgin Coconut Oil 500ml",
-    "category": "COOKING OIL & GHEE",
-    "description": "Premium extra virgin coconut oil. Cold-pressed from fresh coconuts, with natural fragrance intact.",
-    "rating": 4.7,
-    "reviews": 132,
-    "sizeOptions": [
-      {
-        "name": "500ml",
-        "price": 549
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/MAVTTVYc-400-400.webp"
-  },
-  {
     "id": "oil13",
     "name": "Prakruthivanam Cow Ghee 200g",
-    "category": "COOKING OIL & GHEE",
+    "category": "GHEE",
     "description": "Pure A2 desi cow ghee made using traditional Bilona method. Highly aromatic, digestive, and nourishing.",
     "rating": 4.9,
     "reviews": 328,
@@ -350,7 +145,7 @@ export const PRODUCTS = [
   {
     "id": "oil14",
     "name": "Surabhi Desi Cow Ghee",
-    "category": "COOKING OIL & GHEE",
+    "category": "GHEE",
     "description": "Authentic desi cow ghee from Surabhi farms. Made from A2 milk with traditional hand-churning techniques.",
     "rating": 4.8,
     "reviews": 214,
@@ -367,7 +162,7 @@ export const PRODUCTS = [
   {
     "id": "oil15",
     "name": "Surabhi Buffalo Ghee 250g",
-    "category": "COOKING OIL & GHEE",
+    "category": "GHEE",
     "description": "Rich and creamy buffalo ghee with a traditional taste. Great for making sweets and festive cooking.",
     "rating": 4.7,
     "reviews": 88,
@@ -380,517 +175,6 @@ export const PRODUCTS = [
     "inStock": true,
     "type": "ghee",
     "image": "https://cdn.dotpe.in/longtail/store-items/4882616/uVTSWWLL.webp"
-  },
-  {
-    "id": "oil16",
-    "name": "Flax Seed Oil 250ml",
-    "category": "COOKING OIL & GHEE",
-    "description": "Cold-pressed flaxseed oil rich in Omega-3 ALA fatty acids. Ideal as a nutritional supplement or salad dressing.",
-    "rating": 4.6,
-    "reviews": 79,
-    "sizeOptions": [
-      {
-        "name": "250ml",
-        "price": 345
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/7RYPxHEq.webp"
-  },
-  {
-    "id": "oil17",
-    "name": "Extra Virgin Olive Oil 250ml",
-    "category": "COOKING OIL & GHEE",
-    "description": "Premium cold-pressed extra virgin olive oil. Heart-healthy, full of polyphenols. Perfect for salads and light cooking.",
-    "rating": 4.7,
-    "reviews": 102,
-    "sizeOptions": [
-      {
-        "name": "250ml",
-        "price": 549
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/rOww8E7y.webp"
-  },
-  {
-    "id": "oil18",
-    "name": "Tharani Wood Cold Coconut Oil 1L",
-    "category": "COOKING OIL & GHEE",
-    "description": "Premium wood-pressed coconut oil by Tharani. Cold-pressed to retain all natural goodness and coconut aroma.",
-    "rating": 4.8,
-    "reviews": 141,
-    "sizeOptions": [
-      {
-        "name": "1 Litre",
-        "price": 649
-      }
-    ],
-    "inStock": true,
-    "type": "oil",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/vyy9xIRu.webp"
-  },
-  {
-    "id": "dal7",
-    "name": "Prakruthivanam Red Gram Split (Toor Dal)",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Prakruthivanam Red Gram Split (Toor Dal) from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 41,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 120
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/cXs9tBdP.webp",
-    "badge": "Top Seller"
-  },
-  {
-    "id": "dal8",
-    "name": "Prakruthivanam Groundnuts (Peanut)",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Prakruthivanam Groundnuts (Peanut) from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 42,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 130
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/UXkWd5pz.jpeg"
-  },
-  {
-    "id": "dal9",
-    "name": "Prakruthivanam Black Gram Without Husk (Urad Dal)",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Prakruthivanam Black Gram Without Husk (Urad Dal) from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 43,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 130
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/IkWodvQY.jpeg"
-  },
-  {
-    "id": "dal10",
-    "name": "White Urad Dal Split 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality White Urad Dal Split 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 44,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 175
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/Im68Occa.jpeg"
-  },
-  {
-    "id": "dal11",
-    "name": "Prakruthivanam Chana Black 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Prakruthivanam Chana Black 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 45,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 70
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/j0eMo022.jpeg"
-  },
-  {
-    "id": "dal3",
-    "name": "Prakruthivanam Chana Dal",
-    "category": "DAL & PULSES",
-    "description": "Unpolished split chickpeas with high protein and fiber. Perfect for curries and traditional snacks.",
-    "rating": 4.6,
-    "reviews": 62,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 55
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/eY6w29WO.jpeg"
-  },
-  {
-    "id": "dal12",
-    "name": "Prakruthivanam Black Gram Split (Urad Dal)",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Prakruthivanam Black Gram Split (Urad Dal) from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 47,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 110
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/OVr8TKe4.jpeg"
-  },
-  {
-    "id": "dal13",
-    "name": "Prakruthivanam Black Gram Whole 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Prakruthivanam Black Gram Whole 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 48,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 90
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/XaPZLquo.jpeg"
-  },
-  {
-    "id": "dal14",
-    "name": "Prakruthivanam Horse Gram Whole 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Prakruthivanam Horse Gram Whole 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 49,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 70
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/N4k3MyPy.jpeg"
-  },
-  {
-    "id": "dal15",
-    "name": "Prakruthivanam Fried Chana Dal (Bengal Gram)",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Prakruthivanam Fried Chana Dal (Bengal Gram) from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 50,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 55
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/vfsx4kSb.jpeg"
-  },
-  {
-    "id": "dal16",
-    "name": "Green Gram Split (Moong Dal)",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Green Gram Split (Moong Dal) from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 51,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 220
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/ixjdrOih.jpeg"
-  },
-  {
-    "id": "dal17",
-    "name": "Moong Dal 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Moong Dal 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 52,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 150
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/UrUFzTt5.jpeg"
-  },
-  {
-    "id": "dal18",
-    "name": "Masoor Dal 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Masoor Dal 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 53,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 145
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/nSniCsmi.jpeg"
-  },
-  {
-    "id": "dal19",
-    "name": "Green Gram Whole (Pesalu)",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Green Gram Whole (Pesalu) from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 54,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 100
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/N44NEBU5.jpeg"
-  },
-  {
-    "id": "dal20",
-    "name": "Cow Peas (Alasandalu)",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Cow Peas (Alasandalu) from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 55,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 40
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/4oT0QDkY.jpeg"
-  },
-  {
-    "id": "dal21",
-    "name": "Cow Peas Dal 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Cow Peas Dal 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 56,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 90
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/nsp2dpRH.webp"
-  },
-  {
-    "id": "dal22",
-    "name": "Red Cow Peas 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Red Cow Peas 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 57,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 80
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/Q4C8yI57.jpeg"
-  },
-  {
-    "id": "dal23",
-    "name": "Chana White (Kabuli Chana) 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Chana White (Kabuli Chana) 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 58,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 120
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/JPBRDz2E.jpeg"
-  },
-  {
-    "id": "dal24",
-    "name": "Soyabean 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Soyabean 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 59,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 80
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/hiOwWch0.jpeg"
-  },
-  {
-    "id": "dal25",
-    "name": "Pure & Sure Rajma Beans 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Pure & Sure Rajma Beans 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 60,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 210
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/7QCfzDDi.jpeg"
-  },
-  {
-    "id": "dal26",
-    "name": "Panchratana Dal (5 Mix) 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Panchratana Dal (5 Mix) 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 61,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 170
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/mStvdwit.jpeg"
-  },
-  {
-    "id": "dal27",
-    "name": "Barley 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Barley 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 62,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 60
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/2cgZShtW.jpeg"
-  },
-  {
-    "id": "dal28",
-    "name": "Pure & Sure Green Dry Peas 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Pure & Sure Green Dry Peas 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 63,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 200
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/nk7r4sJW.webp"
-  },
-  {
-    "id": "dal29",
-    "name": "White Peas 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality White Peas 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 64,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 145
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/Wge9MhGv.webp"
-  },
-  {
-    "id": "dal30",
-    "name": "Rajma Beans 250g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Rajma Beans 250g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 65,
-    "sizeOptions": [
-      {
-        "name": "250g",
-        "price": 70
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/OmwGqPUe.webp"
-  },
-  {
-    "id": "dal31",
-    "name": "Horse Gram Dal 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Horse Gram Dal 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 66,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 95
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/yiJuxbTF.webp"
-  },
-  {
-    "id": "dal32",
-    "name": "Fried Groundnut 500g",
-    "category": "DAL & PULSES",
-    "description": "Premium quality Fried Groundnut 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 67,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 200
-      }
-    ],
-    "inStock": true,
-    "type": "dal",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/hxJG2uLp.webp"
   },
   {
     "id": "atta5",
@@ -1300,433 +584,6 @@ export const PRODUCTS = [
     "inStock": true,
     "type": "flour",
     "image": "https://cdn.dotpe.in/longtail/store-items/4882616/gr2ADCdO.webp"
-  },
-  {
-    "id": "sh1",
-    "name": "Prakruthivanam Shampoo 600ml",
-    "category": "SHAMPOO",
-    "description": "Premium quality Prakruthivanam Shampoo 600ml from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 92,
-    "sizeOptions": [
-      {
-        "name": "600ml",
-        "price": 420
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/3rYQQDWd.jpeg",
-    "badge": "Top Seller"
-  },
-  {
-    "id": "sh2",
-    "name": "Prakruthivanam Shampoo 200ml",
-    "category": "SHAMPOO",
-    "description": "Premium quality Prakruthivanam Shampoo 200ml from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 93,
-    "sizeOptions": [
-      {
-        "name": "200ml",
-        "price": 150
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/zGISzYXH.jpeg"
-  },
-  {
-    "id": "sh3",
-    "name": "Hibiscus Herbal Shampoo 200ml",
-    "category": "SHAMPOO",
-    "description": "Premium quality Hibiscus Herbal Shampoo 200ml from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 94,
-    "sizeOptions": [
-      {
-        "name": "200ml",
-        "price": 160
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/5ZkRFsiP.webp"
-  },
-  {
-    "id": "sh4",
-    "name": "Amla Sekaya Herbal Shampoo 250ml",
-    "category": "SHAMPOO",
-    "description": "Premium quality Amla Sekaya Herbal Shampoo 250ml from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 95,
-    "sizeOptions": [
-      {
-        "name": "250ml",
-        "price": 170
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/a57nmSDH.webp"
-  },
-  {
-    "id": "sh5",
-    "name": "Anti Dandruff Shampoo 200ml",
-    "category": "SHAMPOO",
-    "description": "Premium quality Anti Dandruff Shampoo 200ml from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 96,
-    "sizeOptions": [
-      {
-        "name": "200ml",
-        "price": 130
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/kssgPKeO.webp"
-  },
-  {
-    "id": "sh6",
-    "name": "Mandhara Shampoo 200ml",
-    "category": "SHAMPOO",
-    "description": "Premium quality Mandhara Shampoo 200ml from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 97,
-    "sizeOptions": [
-      {
-        "name": "200ml",
-        "price": 110
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/q50Qbilr.webp"
-  },
-  {
-    "id": "sh7",
-    "name": "Hair Nourishing Shampoo 200ml",
-    "category": "SHAMPOO",
-    "description": "Premium quality Hair Nourishing Shampoo 200ml from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 98,
-    "sizeOptions": [
-      {
-        "name": "200ml",
-        "price": 130
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/vPyqdofO.webp"
-  },
-  {
-    "id": "soap4",
-    "name": "Baby Soap",
-    "category": "SOAP",
-    "description": "Premium quality Baby Soap from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 99,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 120
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/xC4QM3Y1.webp"
-  },
-  {
-    "id": "soap5",
-    "name": "Cow Milk & Sandal Wood Soap",
-    "category": "SOAP",
-    "description": "Premium quality Cow Milk & Sandal Wood Soap from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 100,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 150
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/KTCsnxew.jpeg"
-  },
-  {
-    "id": "soap6",
-    "name": "Gow Durbar Tulasi Soap",
-    "category": "SOAP",
-    "description": "Premium quality Gow Durbar Tulasi Soap from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 101,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 45
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/NLseRQBi.webp"
-  },
-  {
-    "id": "soap7",
-    "name": "Neem & Aloevera Soap",
-    "category": "SOAP",
-    "description": "Premium quality Neem & Aloevera Soap from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 102,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 140
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/uzyLy4gf.jpeg"
-  },
-  {
-    "id": "soap8",
-    "name": "Neem & Tulsi Soap",
-    "category": "SOAP",
-    "description": "Premium quality Neem & Tulsi Soap from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 103,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 140
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/wmmbYKwD.jpeg"
-  },
-  {
-    "id": "soap9",
-    "name": "Vetiver Soap",
-    "category": "SOAP",
-    "description": "Premium quality Vetiver Soap from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 104,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 150
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/kNiMEMdL.jpeg"
-  },
-  {
-    "id": "soap10",
-    "name": "Panchagavya Soap 100g",
-    "category": "SOAP",
-    "description": "Premium quality Panchagavya Soap 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 105,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 110
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/vt2tvtCF.jpeg"
-  },
-  {
-    "id": "soap11",
-    "name": "Jasmine Soap",
-    "category": "SOAP",
-    "description": "Premium quality Jasmine Soap from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 106,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 120
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/Gy4i1YwV.jpeg"
-  },
-  {
-    "id": "soap12",
-    "name": "Palapack Multani Mitti Soap 100g",
-    "category": "SOAP",
-    "description": "Premium quality Palapack Multani Mitti Soap 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 107,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 80
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/ZVoiNyot.jpeg"
-  },
-  {
-    "id": "soap13",
-    "name": "Gow Durbar Yuva Soap",
-    "category": "SOAP",
-    "description": "Premium quality Gow Durbar Yuva Soap from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 108,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 40
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/ieTj71co.webp"
-  },
-  {
-    "id": "soap14",
-    "name": "Gow Durbar Nara Soap",
-    "category": "SOAP",
-    "description": "Premium quality Gow Durbar Nara Soap from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 109,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 40
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/OE6cNUi7.webp"
-  },
-  {
-    "id": "soap15",
-    "name": "Gow Durbar Sandal Soap",
-    "category": "SOAP",
-    "description": "Premium quality Gow Durbar Sandal Soap from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 110,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 40
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/yHEiD4FB.webp"
-  },
-  {
-    "id": "soap16",
-    "name": "Kesar Face Soap",
-    "category": "SOAP",
-    "description": "Premium quality Kesar Face Soap from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 111,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 44
-      }
-    ],
-    "inStock": true,
-    "type": "wellness",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/mdqU0L8S.webp"
-  },
-  {
-    "id": "hon4",
-    "name": "Honey Farm Collection",
-    "category": "HONEY",
-    "description": "Premium quality Honey Farm Collection from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 112,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 230
-      }
-    ],
-    "inStock": true,
-    "type": "honey",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/TUQQP5xd.jpeg"
-  },
-  {
-    "id": "hon5",
-    "name": "Rock Bee Honey (Wild Forest Honey) 500g",
-    "category": "HONEY",
-    "description": "Premium quality Rock Bee Honey (Wild Forest Honey) 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 113,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 510
-      }
-    ],
-    "inStock": true,
-    "type": "honey",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/froulbcP.jpeg",
-    "badge": "Top Seller"
-  },
-  {
-    "id": "hon6",
-    "name": "Raw Honey 500g",
-    "category": "HONEY",
-    "description": "Premium quality Raw Honey 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 114,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 449
-      }
-    ],
-    "inStock": true,
-    "type": "honey",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/jpgs3fKz.webp"
-  },
-  {
-    "id": "hon7",
-    "name": "Prakruthivanam Forest Honey 500g",
-    "category": "HONEY",
-    "description": "Premium quality Prakruthivanam Forest Honey 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 115,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 480
-      }
-    ],
-    "inStock": true,
-    "type": "honey",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/mDn3aT4M.webp"
-  },
-  {
-    "id": "hon8",
-    "name": "Prakruthivanam Tree Bark Honey",
-    "category": "HONEY",
-    "description": "Premium quality Prakruthivanam Tree Bark Honey from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 116,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 370
-      }
-    ],
-    "inStock": true,
-    "type": "honey",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/ha7hS4hg.webp"
   },
   {
     "id": "jag5",
@@ -2583,159 +1440,6 @@ export const PRODUCTS = [
     "inStock": true,
     "type": "groceries",
     "image": "https://cdn.dotpe.in/longtail/store-items/4882616/7zBXLzem.webp"
-  },
-  {
-    "id": "mas2",
-    "name": "Black Pepper",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Black Pepper from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 167,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 140
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "/products/default.png"
-  },
-  {
-    "id": "mas3",
-    "name": "Cloves",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Cloves from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 168,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 180
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "/products/default.png"
-  },
-  {
-    "id": "mas4",
-    "name": "Cardamom",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Cardamom from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 169,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 240
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "/products/default.png"
-  },
-  {
-    "id": "mas5",
-    "name": "Turmeric Powder",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Turmeric Powder from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 20,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 85
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "/products/default.png"
-  },
-  {
-    "id": "mas6",
-    "name": "Red Chilli Powder",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Red Chilli Powder from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 21,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 110
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "/products/default.png"
-  },
-  {
-    "id": "mas7",
-    "name": "Coriander Powder",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Coriander Powder from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 22,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 95
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "/products/default.png"
-  },
-  {
-    "id": "mas8",
-    "name": "Garam Masala",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Garam Masala from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 23,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 120
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "/products/default.png"
-  },
-  {
-    "id": "mas9",
-    "name": "Sambar Powder",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Sambar Powder from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 24,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 110
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "/products/default.png"
-  },
-  {
-    "id": "mas10",
-    "name": "Rasam Powder",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Rasam Powder from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 25,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 105
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "/products/default.png"
   },
   {
     "id": "spp1",
@@ -3671,210 +2375,6 @@ export const PRODUCTS = [
     "inStock": true,
     "type": "groceries",
     "image": "https://cdn.dotpe.in/longtail/store-items/4882616/AVxGV4aR.webp"
-  },
-  {
-    "id": "mil8",
-    "name": "Arikalu (Kodo) 1kg",
-    "category": "MILLETS",
-    "description": "Premium quality Arikalu (Kodo) 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 81,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 170
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/6fG3flko.webp"
-  },
-  {
-    "id": "mil9",
-    "name": "Samalu (Little) 1kg",
-    "category": "MILLETS",
-    "description": "Premium quality Samalu (Little) 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 82,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 230
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/2DonYwx5.webp"
-  },
-  {
-    "id": "mil10",
-    "name": "Korralu (Foxtail) 1kg",
-    "category": "MILLETS",
-    "description": "Premium quality Korralu (Foxtail) 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 83,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 190
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/Q2AUFDC2.webp"
-  },
-  {
-    "id": "mil11",
-    "name": "Udalu (Barnyard) 1kg",
-    "category": "MILLETS",
-    "description": "Premium quality Udalu (Barnyard) 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 84,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 230
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/xlrvXrR5.jpeg"
-  },
-  {
-    "id": "mil12",
-    "name": "Andu Korralu (Browntop) 1kg",
-    "category": "MILLETS",
-    "description": "Premium quality Andu Korralu (Browntop) 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 85,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 240
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/FyToQn59.jpeg"
-  },
-  {
-    "id": "mil13",
-    "name": "Bajra (Sajjalu) 1kg",
-    "category": "MILLETS",
-    "description": "Premium quality Bajra (Sajjalu) 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 86,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 60
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/QffKCBry.jpeg"
-  },
-  {
-    "id": "mil14",
-    "name": "Jonnalu (Jowar) 1kg",
-    "category": "MILLETS",
-    "description": "Premium quality Jonnalu (Jowar) 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 87,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 90
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/vSyKkZtU.jpeg"
-  },
-  {
-    "id": "mil15",
-    "name": "Pacha Jonnalu (Yellow Jowar) 1kg",
-    "category": "MILLETS",
-    "description": "Premium quality Pacha Jonnalu (Yellow Jowar) 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 88,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 120
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/wjgbqocA.jpeg"
-  },
-  {
-    "id": "mil16",
-    "name": "Ragulu 1kg",
-    "category": "MILLETS",
-    "description": "Premium quality Ragulu 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 89,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 80
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/EZaicgof.jpeg"
-  },
-  {
-    "id": "mil17",
-    "name": "Ragulu 500g",
-    "category": "MILLETS",
-    "description": "Premium quality Ragulu 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 90,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 45
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/cOJPShbV.jpeg"
-  },
-  {
-    "id": "mil18",
-    "name": "Quinoa Seeds 500g",
-    "category": "MILLETS",
-    "description": "Premium quality Quinoa Seeds 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 91,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 250
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/sAq6jN5W.jpeg"
-  },
-  {
-    "id": "mil19",
-    "name": "Varigalu Prosa Millet 1kg",
-    "category": "MILLETS",
-    "description": "Premium quality Varigalu Prosa Millet 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 92,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 250
-      }
-    ],
-    "inStock": true,
-    "type": "millet",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/m8sVKpFl.webp"
   },
   {
     "id": "mh1",
@@ -6563,1128 +5063,6 @@ export const PRODUCTS = [
     "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/LtEAAsiP-400-400.webp"
   },
   {
-    "id": "mas11",
-    "name": "Tamarind 1kg",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Tamarind 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 101,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 230
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/O52fW8tR.webp"
-  },
-  {
-    "id": "mas12",
-    "name": "Tamarind 500g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Tamarind 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 102,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 120
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/Zhcqhfjh.webp"
-  },
-  {
-    "id": "mas13",
-    "name": "Black Gingelly Seeds (Till) 1kg",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Black Gingelly Seeds (Till) 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 103,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 270
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/uYOYwSOh.webp"
-  },
-  {
-    "id": "mas14",
-    "name": "Black Gingelly Seeds (Till) 500g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Black Gingelly Seeds (Till) 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 104,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 140
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/uYOYwSOh.webp"
-  },
-  {
-    "id": "mas15",
-    "name": "Chicken Dum Biryani Masala 50g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Chicken Dum Biryani Masala 50g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 105,
-    "sizeOptions": [
-      {
-        "name": "50g",
-        "price": 85
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/RYRzyYkg-400-400.webp"
-  },
-  {
-    "id": "mas16",
-    "name": "White Gingelly Seeds 1kg",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality White Gingelly Seeds 1kg from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 106,
-    "sizeOptions": [
-      {
-        "name": "1kg",
-        "price": 350
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/81kZqy88.webp"
-  },
-  {
-    "id": "mas17",
-    "name": "White Gingelly Seeds (Sesame/Nuvvulu) 500g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality White Gingelly Seeds (Sesame/Nuvvulu) 500g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 107,
-    "sizeOptions": [
-      {
-        "name": "500g",
-        "price": 180
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/yMfktylO.webp"
-  },
-  {
-    "id": "mas18",
-    "name": "Methi 250g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Methi 250g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 108,
-    "sizeOptions": [
-      {
-        "name": "250g",
-        "price": 50
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/Nzk04Dpg-390-390.webp"
-  },
-  {
-    "id": "mas19",
-    "name": "Methi 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Methi 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 109,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 20
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/a2E2EmLl.webp"
-  },
-  {
-    "id": "mas20",
-    "name": "Mustard 250g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Mustard 250g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 110,
-    "sizeOptions": [
-      {
-        "name": "250g",
-        "price": 50
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/Qr1ntcYz-400-400.webp"
-  },
-  {
-    "id": "mas21",
-    "name": "Mustard 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Mustard 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 111,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 20
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/DlzcTlZg.webp"
-  },
-  {
-    "id": "mas22",
-    "name": "Cloves 50g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Cloves 50g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 112,
-    "sizeOptions": [
-      {
-        "name": "50g",
-        "price": 110
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/iyLz3rQ0.webp"
-  },
-  {
-    "id": "mas23",
-    "name": "Cloves 25g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Cloves 25g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 113,
-    "sizeOptions": [
-      {
-        "name": "25g",
-        "price": 60
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/6HyUjtm4.webp"
-  },
-  {
-    "id": "mas24",
-    "name": "Dhaniyalu 250g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Dhaniyalu 250g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 114,
-    "sizeOptions": [
-      {
-        "name": "250g",
-        "price": 55
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/3pK2eA01.webp"
-  },
-  {
-    "id": "mas25",
-    "name": "Dhaniyalu Powder 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Dhaniyalu Powder 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 115,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 40
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/pJF4LoGx.webp"
-  },
-  {
-    "id": "mas26",
-    "name": "Chilli Powder",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Chilli Powder from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 116,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 70
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/30b5FEFi.webp"
-  },
-  {
-    "id": "mas27",
-    "name": "Red Chillies 250g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Red Chillies 250g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 117,
-    "sizeOptions": [
-      {
-        "name": "250g",
-        "price": 140
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/byEPq2IX.webp"
-  },
-  {
-    "id": "mas28",
-    "name": "Turmeric Powder 250g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Turmeric Powder 250g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 118,
-    "sizeOptions": [
-      {
-        "name": "250g",
-        "price": 120
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/8dIuaUbD.webp"
-  },
-  {
-    "id": "mas29",
-    "name": "Turmeric Powder 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Turmeric Powder 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 119,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 40
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/oiibaXsx.webp"
-  },
-  {
-    "id": "mas30",
-    "name": "Cumin/Jeera 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Cumin/Jeera 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 120,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 90
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/k1LFTL6o.webp"
-  },
-  {
-    "id": "mas31",
-    "name": "Cumin/Jeera 250g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Cumin/Jeera 250g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 121,
-    "sizeOptions": [
-      {
-        "name": "250g",
-        "price": 210
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/wRH0J16B.webp"
-  },
-  {
-    "id": "mas32",
-    "name": "Black Jeera (Nalla Jeera) 50g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Black Jeera (Nalla Jeera) 50g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 122,
-    "sizeOptions": [
-      {
-        "name": "50g",
-        "price": 40
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/mqZKA88v-400-400.webp"
-  },
-  {
-    "id": "mas33",
-    "name": "Cumin/Jeera Powder 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Cumin/Jeera Powder 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 123,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 180
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/mf6Kf86L.webp"
-  },
-  {
-    "id": "mas34",
-    "name": "Ginger Powder 50g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Ginger Powder 50g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 124,
-    "sizeOptions": [
-      {
-        "name": "50g",
-        "price": 40
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/s62wMJpQ-400-400.webp"
-  },
-  {
-    "id": "mas35",
-    "name": "Cardamom (Yalakulu) 50g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Cardamom (Yalakulu) 50g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 125,
-    "sizeOptions": [
-      {
-        "name": "50g",
-        "price": 270
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/Tl0hnosj-400-400.webp"
-  },
-  {
-    "id": "mas36",
-    "name": "Cardamom (Yalakulu) 25g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Cardamom (Yalakulu) 25g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 126,
-    "sizeOptions": [
-      {
-        "name": "25g",
-        "price": 120
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/9Psnkh7A.webp"
-  },
-  {
-    "id": "mas37",
-    "name": "Black Cardamom 25g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Black Cardamom 25g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 127,
-    "sizeOptions": [
-      {
-        "name": "25g",
-        "price": 70
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/vGhLfntg-400-400.webp"
-  },
-  {
-    "id": "mas38",
-    "name": "Pepper 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Pepper 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 128,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 150
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/dvzK3UwL.webp"
-  },
-  {
-    "id": "mas39",
-    "name": "Pepper",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Pepper from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 129,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 80
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/cCedkF5Y.webp"
-  },
-  {
-    "id": "mas40",
-    "name": "Cinnamon (Dal China Chekka) 50g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Cinnamon (Dal China Chekka) 50g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 130,
-    "sizeOptions": [
-      {
-        "name": "50g",
-        "price": 40
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/ib5Zduru.webp"
-  },
-  {
-    "id": "mas41",
-    "name": "Pure & Sure Organic Cinnamon Powder 50g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Pure & Sure Organic Cinnamon Powder 50g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 131,
-    "sizeOptions": [
-      {
-        "name": "50g",
-        "price": 70
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/W1Z8VTYE-400-400.webp"
-  },
-  {
-    "id": "mas42",
-    "name": "Rasam Powder 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Rasam Powder 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 132,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 55
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/lqdw35AH.webp"
-  },
-  {
-    "id": "mas43",
-    "name": "Mango Powder 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Mango Powder 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 133,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 60
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/I5tj2QUR.jpeg"
-  },
-  {
-    "id": "mas44",
-    "name": "Kasuri Methi 50g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Kasuri Methi 50g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 134,
-    "sizeOptions": [
-      {
-        "name": "50g",
-        "price": 70
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/M9GI3zTp.jpeg"
-  },
-  {
-    "id": "mas45",
-    "name": "Dry Coconut",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Dry Coconut from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 135,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 130
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/yDCPVmf7.webp"
-  },
-  {
-    "id": "mas46",
-    "name": "Carom Seeds/Ajwain/Vamu 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Carom Seeds/Ajwain/Vamu 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 136,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 80
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/DGb0v4qI.jpeg"
-  },
-  {
-    "id": "mas47",
-    "name": "Heeng/Hing Powder 50g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Heeng/Hing Powder 50g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 137,
-    "sizeOptions": [
-      {
-        "name": "50g",
-        "price": 150
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/1ja8xcWD.webp"
-  },
-  {
-    "id": "mas48",
-    "name": "Pure & Sure Organic Fennel Seeds 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Pure & Sure Organic Fennel Seeds 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 138,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 120
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/R9Q7adGs.webp"
-  },
-  {
-    "id": "mas49",
-    "name": "Pure & Sure Organic Garam Masala 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Pure & Sure Organic Garam Masala 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 139,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 150
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/RrO9lrBT.webp"
-  },
-  {
-    "id": "mas50",
-    "name": "Pure & Sure Organic Sambar Powder 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Pure & Sure Organic Sambar Powder 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 140,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 90
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/lOcNYANI.webp"
-  },
-  {
-    "id": "mas51",
-    "name": "Pure & Sure Organic Pulav Masala 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Pure & Sure Organic Pulav Masala 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 141,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 95
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/nmHUo5kq.webp"
-  },
-  {
-    "id": "mas52",
-    "name": "Matrika Garam Masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Garam Masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 142,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 55
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/IU26gO7S-400-400.webp"
-  },
-  {
-    "id": "mas53",
-    "name": "Matrika Sambar Powder 50g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Sambar Powder 50g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 143,
-    "sizeOptions": [
-      {
-        "name": "50g",
-        "price": 55
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/IU26gO7S-400-400.webp"
-  },
-  {
-    "id": "mas54",
-    "name": "Matrika Chole Masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Chole Masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 144,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 45
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/HP3o4Pns-400-400.webp"
-  },
-  {
-    "id": "mas55",
-    "name": "Matrika Chat Masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Chat Masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 145,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 50
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/L0iUe6db-400-400.webp"
-  },
-  {
-    "id": "mas56",
-    "name": "Matrika Pav Bhaji Masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Pav Bhaji Masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 146,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 45
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/g9yONF2R-400-400.webp"
-  },
-  {
-    "id": "mas57",
-    "name": "Matrika Egg Burji Masala",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Egg Burji Masala from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 147,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 45
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/sZLBeUPk.webp"
-  },
-  {
-    "id": "mas58",
-    "name": "Matrika Chicken Dum Biriyani Masala",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Chicken Dum Biriyani Masala from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 148,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 85
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/jojgj1yV-400-400.webp"
-  },
-  {
-    "id": "mas59",
-    "name": "Matrika Mutton Dum Biryani Masala",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Mutton Dum Biryani Masala from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 149,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 85
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/brkPZy5R-400-400.webp"
-  },
-  {
-    "id": "mas60",
-    "name": "Matrika Veg Dum Biryani Masala",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Veg Dum Biryani Masala from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 150,
-    "sizeOptions": [
-      {
-        "name": "Standard",
-        "price": 85
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/fvosDDjk-400-400.webp"
-  },
-  {
-    "id": "mas61",
-    "name": "Matrika Rasam powder 50g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Rasam powder 50g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 151,
-    "sizeOptions": [
-      {
-        "name": "50g",
-        "price": 50
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/V7IX5HP7-400-400.webp"
-  },
-  {
-    "id": "mas62",
-    "name": "Matrika Chicken fry masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Chicken fry masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 152,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 60
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/XLLmIUjo-400-400.webp"
-  },
-  {
-    "id": "mas63",
-    "name": "Matrika Egg Burji Masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Egg Burji Masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 153,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 45
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/J0kvdRWo-400-400.webp"
-  },
-  {
-    "id": "mas64",
-    "name": "Matrika Mutton Masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Mutton Masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 154,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 50
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/HmQvO9k5.webp"
-  },
-  {
-    "id": "mas65",
-    "name": "Matrika Chicken Masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Chicken Masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 155,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 50
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/mNO4Ro9T-400-400.webp"
-  },
-  {
-    "id": "mas66",
-    "name": "Matrika Fish Masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Fish Masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 156,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 45
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/nthtNeOP-400-400.webp"
-  },
-  {
-    "id": "mas67",
-    "name": "Matrika kadai paneer Masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika kadai paneer Masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 157,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 45
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/lzzoVXI8-400-400.webp"
-  },
-  {
-    "id": "mas68",
-    "name": "Matrika Masala Omelette 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Masala Omelette 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 158,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 45
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/cHwO8avj-400-400.webp"
-  },
-  {
-    "id": "mas69",
-    "name": "Matrika Masala Omelette 30g (Dup)",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Masala Omelette 30g (Dup) from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 159,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 45
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/uRnUasAg-400-400.webp"
-  },
-  {
-    "id": "mas70",
-    "name": "Matrika sabji Masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika sabji Masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 160,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 50
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/vESTBfW1-400-400.webp"
-  },
-  {
-    "id": "mas71",
-    "name": "Matrika sabji Masala 30g (Dup)",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika sabji Masala 30g (Dup) from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 161,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 50
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/6XQ7nBlz-400-400.webp"
-  },
-  {
-    "id": "mas72",
-    "name": "Matrika Pani poori Masala 30g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Matrika Pani poori Masala 30g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.7,
-    "reviews": 162,
-    "sizeOptions": [
-      {
-        "name": "30g",
-        "price": 45
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/2IexAYro-400-400.webp"
-  },
-  {
-    "id": "mas73",
-    "name": "Prakruthivanam Verrinuvvula Karam 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Prakruthivanam Verrinuvvula Karam 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.8,
-    "reviews": 163,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 80
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/8WhNrWmL-400-400.webp"
-  },
-  {
-    "id": "mas74",
-    "name": "Pulihora mix powder 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Pulihora mix powder 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.9,
-    "reviews": 164,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 40
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/kKUo4T7r-400-400.webp"
-  },
-  {
-    "id": "mas75",
-    "name": "Anasa puvvu 25g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Anasa puvvu 25g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.5,
-    "reviews": 165,
-    "sizeOptions": [
-      {
-        "name": "25g",
-        "price": 50
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/4jE69xTX-400-400.webp"
-  },
-  {
-    "id": "mas76",
-    "name": "Turmeric Powder (Pasupu) 100g",
-    "category": "MASALAS & SPICES",
-    "description": "Premium quality Turmeric Powder (Pasupu) 100g from Prakruthivanam. Grown and processed naturally using traditional chemical-free methods.",
-    "rating": 4.6,
-    "reviews": 166,
-    "sizeOptions": [
-      {
-        "name": "100g",
-        "price": 50
-      }
-    ],
-    "inStock": true,
-    "type": "spice",
-    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/IuLjUASJ.webp"
-  },
-  {
     "id": "sn39",
     "name": "Flax Seeds 250g",
     "category": "SNACKS",
@@ -9179,5 +6557,743 @@ export const PRODUCTS = [
     "inStock": true,
     "type": "groceries",
     "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/ltaYcAHg.webp"
+  },
+  {
+    "id": "hon_farm",
+    "name": "Farm Honey 1kg",
+    "category": "HONEY",
+    "description": "Pure farm harvested organic honey. Raw, unfiltered, and naturally sweet.",
+    "rating": 4.8,
+    "reviews": 92,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 450
+      }
+    ],
+    "inStock": true,
+    "type": "honey",
+    "image": "/images/raw_honey.png"
+  },
+  {
+    "id": "hon_forest",
+    "name": "Forest Honey 1kg",
+    "category": "HONEY",
+    "description": "Wild forest honey collected from natural beehives. Rich in natural nutrients and minerals.",
+    "rating": 4.9,
+    "reviews": 115,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 550
+      }
+    ],
+    "inStock": true,
+    "type": "honey",
+    "image": "/images/raw_honey.png",
+    "badge": "Wild Harvest"
+  },
+  {
+    "id": "hon_tree",
+    "name": "Tree Bark Honey 1kg",
+    "category": "HONEY",
+    "description": "Premium honey harvested from selected tree bark hives with a deep, woody aroma and flavor.",
+    "rating": 4.7,
+    "reviews": 64,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 650
+      }
+    ],
+    "inStock": true,
+    "type": "honey",
+    "image": "/images/raw_honey.png"
+  },
+  {
+    "id": "pul_red_gram",
+    "name": "Red Gram (Stone Crusher) 1kg",
+    "category": "PULSES",
+    "description": "Traditional stone-crushed red gram split (toor dal). High in protein and delicious taste.",
+    "rating": 4.8,
+    "reviews": 120,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 240
+      }
+    ],
+    "inStock": true,
+    "type": "dal",
+    "image": "/images/organic_pulses.png"
+  },
+  {
+    "id": "pul_green_gram",
+    "name": "Green Gram (Stone Crusher) 1kg",
+    "category": "PULSES",
+    "description": "Organic stone-crushed split green gram (moong dal). Easy to digest and rich in vitamins.",
+    "rating": 4.7,
+    "reviews": 85,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 220
+      }
+    ],
+    "inStock": true,
+    "type": "dal",
+    "image": "/images/organic_pulses.png"
+  },
+  {
+    "id": "pul_black_gram_sc",
+    "name": "Black Gram (Stone Crusher) 1kg",
+    "category": "PULSES",
+    "description": "Stone-crushed split black gram (urad dal) without husk. Perfect for idly, dosa, and vada batter.",
+    "rating": 4.8,
+    "reviews": 98,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 230
+      }
+    ],
+    "inStock": true,
+    "type": "dal",
+    "image": "/images/organic_pulses.png"
+  },
+  {
+    "id": "pul_black_gram_husk",
+    "name": "Black Gram with Husk 1kg",
+    "category": "PULSES",
+    "description": "Whole black gram with husk (urad whole) rich in dietary fiber and essential minerals.",
+    "rating": 4.6,
+    "reviews": 74,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 180
+      }
+    ],
+    "inStock": true,
+    "type": "dal",
+    "image": "/images/organic_pulses.png"
+  },
+  {
+    "id": "pul_green_gram_husk",
+    "name": "Green Gram with Husk 1kg",
+    "category": "PULSES",
+    "description": "Whole green gram with husk (whole moong) ideal for sprouting, high in protein and highly nutritious.",
+    "rating": 4.7,
+    "reviews": 89,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 180
+      }
+    ],
+    "inStock": true,
+    "type": "dal",
+    "image": "/images/organic_pulses.png"
+  },
+  {
+    "id": "pul_horse_gram_sc",
+    "name": "Horse Gram (Stone Crusher) 1kg",
+    "category": "PULSES",
+    "description": "Stone-crushed horse gram split. Traditional superfood known for its iron and protein content.",
+    "rating": 4.6,
+    "reviews": 62,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 160
+      }
+    ],
+    "inStock": true,
+    "type": "dal",
+    "image": "/images/organic_pulses.png"
+  },
+  {
+    "id": "pul_horse_gram_husk",
+    "name": "Horse Gram with Husk 1kg",
+    "category": "PULSES",
+    "description": "Whole horse gram with husk. Nutrient-dense pulse traditionally used in soups and medicinal dishes.",
+    "rating": 4.5,
+    "reviews": 53,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 140
+      }
+    ],
+    "inStock": true,
+    "type": "dal",
+    "image": "/images/organic_pulses.png"
+  },
+  {
+    "id": "mil_udarlu",
+    "name": "Udarlu (Barnyard Millet) 1kg",
+    "category": "MILLETS",
+    "description": "Organic barnyard millet (Udarlu). Gluten-free, high in fiber, and low glycemic index.",
+    "rating": 4.7,
+    "reviews": 105,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 210
+      }
+    ],
+    "inStock": true,
+    "type": "millet",
+    "image": "/images/millet_grains.png"
+  },
+  {
+    "id": "mil_korralu",
+    "name": "Korralu (Foxtail Millet) 1kg",
+    "category": "MILLETS",
+    "description": "Organic foxtail millet (Korralu). Excellent source of iron and protein for healthy active life.",
+    "rating": 4.8,
+    "reviews": 142,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 190
+      }
+    ],
+    "inStock": true,
+    "type": "millet",
+    "image": "/images/millet_grains.png",
+    "badge": "Popular"
+  },
+  {
+    "id": "mil_arikallu",
+    "name": "Arikallu (Kodo Millet) 1kg",
+    "category": "MILLETS",
+    "description": "Organic kodo millet (Arikallu). Easy to digest, high in lecithin and antioxidants.",
+    "rating": 4.6,
+    "reviews": 88,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 170
+      }
+    ],
+    "inStock": true,
+    "type": "millet",
+    "image": "/images/millet_grains.png"
+  },
+  {
+    "id": "mil_andukorralu",
+    "name": "Andukorralu (Browntop Millet) 1kg",
+    "category": "MILLETS",
+    "description": "Organic browntop millet (Andukorralu). Highly nutritious, rich in minerals and fiber.",
+    "rating": 4.9,
+    "reviews": 110,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 240
+      }
+    ],
+    "inStock": true,
+    "type": "millet",
+    "image": "/images/millet_grains.png",
+    "badge": "Premium"
+  },
+  {
+    "id": "mil_samalu",
+    "name": "Samalu (Little Millet) 1kg",
+    "category": "MILLETS",
+    "description": "Organic little millet (Samalu). Ideal for dynamic energy levels and traditional health recipes.",
+    "rating": 4.7,
+    "reviews": 95,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 230
+      }
+    ],
+    "inStock": true,
+    "type": "millet",
+    "image": "/images/millet_grains.png"
+  },
+  {
+    "id": "mil_qnova",
+    "name": "Qnova (Quinoa) 1kg",
+    "category": "MILLETS",
+    "description": "High-quality organic quinoa grains. Rich in complete proteins, amino acids, and minerals.",
+    "rating": 4.8,
+    "reviews": 76,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 220
+      }
+    ],
+    "inStock": true,
+    "type": "millet",
+    "image": "/images/millet_grains.png"
+  },
+  {
+    "id": "sh_200ml",
+    "name": "Prakruthivanam Herbal Shampoo 200ml",
+    "category": "SHAMPOO",
+    "description": "Natural chemical-free herbal shampoo for hair strengthening and scalp care.",
+    "rating": 4.7,
+    "reviews": 125,
+    "sizeOptions": [
+      {
+        "name": "200ml",
+        "price": 150
+      }
+    ],
+    "inStock": true,
+    "type": "shampoo",
+    "image": "/images/herbal_soap.png"
+  },
+  {
+    "id": "sh_600ml",
+    "name": "Prakruthivanam Herbal Shampoo 600ml",
+    "category": "SHAMPOO",
+    "description": "Value pack of our natural chemical-free herbal shampoo for smooth and healthy hair.",
+    "rating": 4.8,
+    "reviews": 168,
+    "sizeOptions": [
+      {
+        "name": "600ml",
+        "price": 420
+      }
+    ],
+    "inStock": true,
+    "type": "shampoo",
+    "image": "/images/herbal_soap.png",
+    "badge": "Value Pack"
+  },
+  {
+    "id": "so_neem_aloe",
+    "name": "Neem Aloe Vera Soap",
+    "category": "SOAP",
+    "description": "Natural antibacterial neem and soothing aloe vera handmade soap.",
+    "rating": 4.7,
+    "reviews": 114,
+    "sizeOptions": [
+      {
+        "name": "Standard",
+        "price": 140
+      }
+    ],
+    "inStock": true,
+    "type": "soap",
+    "image": "/images/herbal_soap.png"
+  },
+  {
+    "id": "so_neem_tulsi",
+    "name": "Neem Tulsi Soap",
+    "category": "SOAP",
+    "description": "Handmade soap with extracts of organic neem and tulsi for clean and refreshed skin.",
+    "rating": 4.6,
+    "reviews": 92,
+    "sizeOptions": [
+      {
+        "name": "Standard",
+        "price": 120
+      }
+    ],
+    "inStock": true,
+    "type": "soap",
+    "image": "/images/herbal_soap.png"
+  },
+  {
+    "id": "so_vetivert",
+    "name": "Vetivert Soap",
+    "category": "SOAP",
+    "description": "Fragrant vetiver soap with cooling and calming herbal properties.",
+    "rating": 4.5,
+    "reviews": 57,
+    "sizeOptions": [
+      {
+        "name": "Standard",
+        "price": 100
+      }
+    ],
+    "inStock": true,
+    "type": "soap",
+    "image": "/images/herbal_soap.png"
+  },
+  {
+    "id": "so_cow_milk",
+    "name": "Cow Milk & Sandalwood Soap",
+    "category": "SOAP",
+    "description": "Rich nourishing cow milk soap infused with fragrant natural sandalwood oils.",
+    "rating": 4.9,
+    "reviews": 148,
+    "sizeOptions": [
+      {
+        "name": "Standard",
+        "price": 120
+      }
+    ],
+    "inStock": true,
+    "type": "soap",
+    "image": "/images/herbal_soap.png",
+    "badge": "Luxurious"
+  },
+  {
+    "id": "so_multani",
+    "name": "Multani Mitti Soap",
+    "category": "SOAP",
+    "description": "Exfoliating multani mitti clay soap for absorbing excess oil and restoring glow.",
+    "rating": 4.5,
+    "reviews": 84,
+    "sizeOptions": [
+      {
+        "name": "Standard",
+        "price": 80
+      }
+    ],
+    "inStock": true,
+    "type": "soap",
+    "image": "/images/herbal_soap.png"
+  },
+  {
+    "id": "so_panchagavya",
+    "name": "Panchagavya Soap",
+    "category": "SOAP",
+    "description": "Traditional Ayurvedic panchagavya soap made using pure natural ingredients.",
+    "rating": 4.6,
+    "reviews": 66,
+    "sizeOptions": [
+      {
+        "name": "Standard",
+        "price": 100
+      }
+    ],
+    "inStock": true,
+    "type": "soap",
+    "image": "/images/herbal_soap.png"
+  },
+  {
+    "id": "so_jasmine",
+    "name": "Jasmine Soap",
+    "category": "SOAP",
+    "description": "Handmade soap with delicate, refreshing scent of natural jasmine blossoms.",
+    "rating": 4.7,
+    "reviews": 93,
+    "sizeOptions": [
+      {
+        "name": "Standard",
+        "price": 100
+      }
+    ],
+    "inStock": true,
+    "type": "soap",
+    "image": "/images/herbal_soap.png"
+  },
+  {
+    "id": "oil_coconut_1l",
+    "name": "Prakruthivanam Coconut Oil 1L",
+    "category": "COOKING OIL",
+    "description": "Cold-pressed wood-churned coconut oil. 100% pure, natural, and chemical-free.",
+    "rating": 4.8,
+    "reviews": 192,
+    "sizeOptions": [
+      {
+        "name": "1 Litre",
+        "price": 840
+      }
+    ],
+    "inStock": true,
+    "type": "oil",
+    "image": "/images/groundnut_oil.png"
+  },
+  {
+    "id": "oil_groundnut_1l",
+    "name": "Prakruthivanam Groundnut Oil 1L",
+    "category": "COOKING OIL",
+    "description": "Traditional wood-pressed groundnut oil, unrefined and rich in natural nutrients.",
+    "rating": 4.9,
+    "reviews": 341,
+    "sizeOptions": [
+      {
+        "name": "1 Litre",
+        "price": 480
+      }
+    ],
+    "inStock": true,
+    "type": "oil",
+    "image": "/images/groundnut_oil.png",
+    "badge": "Best Seller"
+  },
+  {
+    "id": "oil_groundnut_5l",
+    "name": "Prakruthivanam Groundnut Oil 5L",
+    "category": "COOKING OIL",
+    "description": "Bulk value pack of wood-pressed groundnut oil. Chemical-free and heart healthy.",
+    "rating": 4.9,
+    "reviews": 115,
+    "sizeOptions": [
+      {
+        "name": "5 Litre",
+        "price": 2350
+      }
+    ],
+    "inStock": true,
+    "type": "oil",
+    "image": "/images/groundnut_oil.png"
+  },
+  {
+    "id": "oil_safflower_1l",
+    "name": "Prakruthivanam Safflower Oil 1L",
+    "category": "COOKING OIL",
+    "description": "Wood-pressed safflower oil, ideal for deep frying and high-temperature cooking.",
+    "rating": 4.7,
+    "reviews": 68,
+    "sizeOptions": [
+      {
+        "name": "1 Litre",
+        "price": 790
+      }
+    ],
+    "inStock": true,
+    "type": "oil",
+    "image": "/images/groundnut_oil.png"
+  },
+  {
+    "id": "oil_gingelly_1l",
+    "name": "Prakruthivanam Gingelly Oil 1L",
+    "category": "COOKING OIL",
+    "description": "Pure wood-pressed gingelly (sesame) oil with authentic aroma and traditional taste.",
+    "rating": 4.8,
+    "reviews": 156,
+    "sizeOptions": [
+      {
+        "name": "1 Litre",
+        "price": 590
+      }
+    ],
+    "inStock": true,
+    "type": "oil",
+    "image": "/images/groundnut_oil.png"
+  },
+  {
+    "id": "oil_castor_1l",
+    "name": "Prakruthivanam Castor Oil 1L",
+    "category": "COOKING OIL",
+    "description": "Pure wood cold-pressed castor oil for digestive, skin and hair care wellness.",
+    "rating": 4.6,
+    "reviews": 74,
+    "sizeOptions": [
+      {
+        "name": "1 Litre",
+        "price": 480
+      }
+    ],
+    "inStock": true,
+    "type": "oil",
+    "image": "/images/groundnut_oil.png"
+  },
+  {
+    "id": "oil_mustard_1l",
+    "name": "Prakruthivanam Mustard Oil 1L",
+    "category": "COOKING OIL",
+    "description": "Rich wood-pressed mustard oil with a strong, authentic flavor. Great for cooking and pickles.",
+    "rating": 4.7,
+    "reviews": 105,
+    "sizeOptions": [
+      {
+        "name": "1 Litre",
+        "price": 380
+      }
+    ],
+    "inStock": true,
+    "type": "oil",
+    "image": "/images/groundnut_oil.png"
+  },
+  {
+    "id": "oil_olive_1l",
+    "name": "Prakruthivanam Olive Oil 1L",
+    "category": "COOKING OIL",
+    "description": "Organic extra virgin olive oil. Perfect for salads, light cooking, and general wellness.",
+    "rating": 4.8,
+    "reviews": 90,
+    "sizeOptions": [
+      {
+        "name": "1 Litre",
+        "price": 1100
+      }
+    ],
+    "inStock": true,
+    "type": "oil",
+    "image": "/images/groundnut_oil.png"
+  },
+  {
+    "id": "oil_sunflower_1l",
+    "name": "Prakruthivanam Sunflower Oil 1L",
+    "category": "COOKING OIL",
+    "description": "Organic cold-pressed sunflower oil. Light taste, highly versatile for everyday cooking.",
+    "rating": 4.6,
+    "reviews": 82,
+    "sizeOptions": [
+      {
+        "name": "1 Litre",
+        "price": 460
+      }
+    ],
+    "inStock": true,
+    "type": "oil",
+    "image": "/images/groundnut_oil.png"
+  },
+  {
+    "id": "sp_chilli_1kg",
+    "name": "Dry Red Chilli 1kg",
+    "category": "MASALAS & SPICES",
+    "description": "Premium whole dry red chillies grown naturally without synthetic fertilizers.",
+    "rating": 4.7,
+    "reviews": 112,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 350
+      }
+    ],
+    "inStock": true,
+    "type": "spices",
+    "image": "/images/organic_spices.png"
+  },
+  {
+    "id": "sp_chilli_pwd_1kg",
+    "name": "Red Chilli Powder 1kg",
+    "category": "MASALAS & SPICES",
+    "description": "Pure stone-ground red chilli powder. Bright color and authentic heat.",
+    "rating": 4.8,
+    "reviews": 145,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 380
+      }
+    ],
+    "inStock": true,
+    "type": "spices",
+    "image": "/images/organic_spices.png",
+    "badge": "Pure Spices"
+  },
+  {
+    "id": "sp_turmeric_1kg",
+    "name": "Turmeric Powder 1kg",
+    "category": "MASALAS & SPICES",
+    "description": "Highly aromatic turmeric powder containing high natural curcumin levels.",
+    "rating": 4.9,
+    "reviews": 210,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 320
+      }
+    ],
+    "inStock": true,
+    "type": "spices",
+    "image": "/images/organic_spices.png"
+  },
+  {
+    "id": "sp_cinnamon_50g",
+    "name": "Cinnamon (Dalchini) 50g",
+    "category": "MASALAS & SPICES",
+    "description": "Sweet and highly aromatic cinnamon bark pieces sourced from organic forest farms.",
+    "rating": 4.7,
+    "reviews": 67,
+    "sizeOptions": [
+      {
+        "name": "50g",
+        "price": 90
+      }
+    ],
+    "inStock": true,
+    "type": "spices",
+    "image": "/images/organic_spices.png"
+  },
+  {
+    "id": "sp_jeera_250g",
+    "name": "Jeera (Cumin Seeds) 250g",
+    "category": "MASALAS & SPICES",
+    "description": "Fresh and flavorful dry cumin seeds (jeera) for seasoning and tempering.",
+    "rating": 4.8,
+    "reviews": 158,
+    "sizeOptions": [
+      {
+        "name": "250g",
+        "price": 180
+      }
+    ],
+    "inStock": true,
+    "type": "spices",
+    "image": "/images/organic_spices.png"
+  },
+  {
+    "id": "sp_cardamom_100g",
+    "name": "Cardamom Seeds 100g",
+    "category": "MASALAS & SPICES",
+    "description": "Whole green cardamom pods with intense sweet-spicy aroma. Selected by hand.",
+    "rating": 4.9,
+    "reviews": 84,
+    "sizeOptions": [
+      {
+        "name": "100g",
+        "price": 340
+      }
+    ],
+    "inStock": true,
+    "type": "spices",
+    "image": "/images/organic_spices.png"
+  },
+  {
+    "id": "sp_pepper_100g",
+    "name": "Black Pepper Seeds 100g",
+    "category": "MASALAS & SPICES",
+    "description": "Bold black pepper seeds with pungent aroma and strong spicy kick.",
+    "rating": 4.8,
+    "reviews": 110,
+    "sizeOptions": [
+      {
+        "name": "100g",
+        "price": 160
+      }
+    ],
+    "inStock": true,
+    "type": "spices",
+    "image": "/images/organic_spices.png"
+  },
+  {
+    "id": "sp_mustard_200g",
+    "name": "Mustard Seeds 200g",
+    "category": "MASALAS & SPICES",
+    "description": "Premium whole mustard seeds, key ingredient for tempering traditional dishes.",
+    "rating": 4.6,
+    "reviews": 93,
+    "sizeOptions": [
+      {
+        "name": "200g",
+        "price": 80
+      }
+    ],
+    "inStock": true,
+    "type": "spices",
+    "image": "/images/organic_spices.png"
+  },
+  {
+    "id": "sp_dhaniya_250g",
+    "name": "Dhaniyalu (Coriander Seeds) 250g",
+    "category": "MASALAS & SPICES",
+    "description": "Whole organic coriander seeds (dhaniyalu) with aromatic, citrusy flavor profile.",
+    "rating": 4.7,
+    "reviews": 102,
+    "sizeOptions": [
+      {
+        "name": "250g",
+        "price": 120
+      }
+    ],
+    "inStock": true,
+    "type": "spices",
+    "image": "/images/organic_spices.png"
   }
 ];

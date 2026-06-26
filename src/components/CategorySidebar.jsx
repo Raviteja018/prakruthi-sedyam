@@ -122,7 +122,7 @@ export default function CategorySidebar({
           <p className="text-xs text-gray-400 text-center py-4">No categories found</p>
         ) : (
           filteredGroups.map(group => {
-            const hasActiveInGroup = group.categories.includes(selectedCategory);
+            const hasActiveInGroup = group.categories.includes(selectedCategory) || selectedCategory === group.id;
             const isExpanded = expandedGroups[group.id] || hasActiveInGroup;
 
             return (
@@ -131,9 +131,13 @@ export default function CategorySidebar({
                 <button
                   type="button"
                   onClick={() => toggleGroup(group.id)}
-                  className="w-full flex items-center justify-between px-3 py-2.5 bg-[#fbf8f3] hover:bg-[#f5ebd9]/40 border-b border-[#faf7f0] text-left transition-colors duration-200 cursor-pointer"
+                  className={`w-full flex items-center justify-between px-3 py-2.5 hover:bg-[#f5ebd9]/40 border-b border-[#faf7f0] text-left transition-colors duration-200 cursor-pointer ${
+                    selectedCategory === group.id ? "bg-[#2a5a32]/10 font-bold" : "bg-[#fbf8f3]"
+                  }`}
                 >
-                  <span className="text-xs font-bold text-gray-700 font-serif tracking-wide uppercase">
+                  <span className={`text-xs font-bold font-serif tracking-wide uppercase ${
+                    selectedCategory === group.id ? "text-[#2a5a32]" : "text-gray-700"
+                  }`}>
                     {group.name}
                   </span>
                   {isExpanded ? (
