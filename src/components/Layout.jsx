@@ -108,6 +108,7 @@ export default function Layout() {
         cartTotalItems={cartTotalItems}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
+        setSelectedCategory={setSelectedCategory}
         onOpenCart={() => setCartOpen(true)}
       />
 

@@ -6573,7 +6573,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "honey",
-    "image": "/images/raw_honey.png"
+    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/TUQQP5xd.jpeg"
   },
   {
     "id": "hon_forest",
@@ -6590,7 +6590,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "honey",
-    "image": "/images/raw_honey.png",
+    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/froulbcP.jpeg",
     "badge": "Wild Harvest"
   },
   {
@@ -6608,7 +6608,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "honey",
-    "image": "/images/raw_honey.png"
+    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/ha7hS4hg.webp"
   },
   {
     "id": "pul_red_gram",
@@ -6625,7 +6625,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "dal",
-    "image": "/images/organic_pulses.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782474478/red_gram_stone_crushed_vni8m3.jpg"
   },
   {
     "id": "pul_green_gram",
@@ -6642,13 +6642,13 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "dal",
-    "image": "/images/organic_pulses.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782474476/green_gram_stoned_crushed_lu2cqa.jpg"
   },
   {
     "id": "pul_black_gram_sc",
     "name": "Black Gram (Stone Crusher) 1kg",
     "category": "PULSES",
-    "description": "Stone-crushed split black gram (urad dal) without husk. Perfect for idly, dosa, and vada batter.",
+    "description": "Stone-crushed split black gram (urad dal) with husk. Rich in protein and traditional flavor.",
     "rating": 4.8,
     "reviews": 98,
     "sizeOptions": [
@@ -6659,7 +6659,24 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "dal",
-    "image": "/images/organic_pulses.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782474477/black_gram_stone_crushed_llyenr.jpg"
+  },
+  {
+    "id": "pul_black_gram_without_husk",
+    "name": "Black Gram (Without Husk) 1kg",
+    "category": "PULSES",
+    "description": "Premium split black gram without husk (urad dal). Essential for preparing soft idlis, crispy dosas, and vadas.",
+    "rating": 4.8,
+    "reviews": 114,
+    "sizeOptions": [
+      {
+        "name": "1kg",
+        "price": 240
+      }
+    ],
+    "inStock": true,
+    "type": "dal",
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782474476/black_gram_without_husk_ail3sg.jpg"
   },
   {
     "id": "pul_black_gram_husk",
@@ -6676,7 +6693,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "dal",
-    "image": "/images/organic_pulses.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782474476/black_gram_with_husk_kfiuom.jpg"
   },
   {
     "id": "pul_green_gram_husk",
@@ -6693,7 +6710,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "dal",
-    "image": "/images/organic_pulses.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782474476/green_gram_with_husk_dv3gko.jpg"
   },
   {
     "id": "pul_horse_gram_sc",
@@ -6710,7 +6727,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "dal",
-    "image": "/images/organic_pulses.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782474475/horse_gram_stone_crushed_txktwg.jpg"
   },
   {
     "id": "pul_horse_gram_husk",
@@ -6727,7 +6744,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "dal",
-    "image": "/images/organic_pulses.png"
+    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/IkWodvQY.jpeg"
   },
   {
     "id": "mil_udarlu",
@@ -6744,7 +6761,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "millet",
-    "image": "/images/millet_grains.png"
+    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/xlrvXrR5.jpeg"
   },
   {
     "id": "mil_korralu",
@@ -6761,7 +6778,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "millet",
-    "image": "/images/millet_grains.png",
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782470906/korralu_zr6l6y.jpg",
     "badge": "Popular"
   },
   {
@@ -6779,7 +6796,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "millet",
-    "image": "/images/millet_grains.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782470905/arikalu_chydof.jpg"
   },
   {
     "id": "mil_andukorralu",
@@ -6796,7 +6813,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "millet",
-    "image": "/images/millet_grains.png",
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782470905/andukorralu_zukxcb.jpg",
     "badge": "Premium"
   },
   {
@@ -6814,7 +6831,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "millet",
-    "image": "/images/millet_grains.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782470905/samalu_glf2mg.jpg"
   },
   {
     "id": "mil_qnova",
@@ -6848,7 +6865,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "shampoo",
-    "image": "/images/herbal_soap.png"
+    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/5ZkRFsiP.webp"
   },
   {
     "id": "sh_600ml",
@@ -6865,8 +6882,25 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "shampoo",
-    "image": "/images/herbal_soap.png",
+    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/5ZkRFsiP.webp",
     "badge": "Value Pack"
+  },
+  {
+    "id": "sh_traditional_200ml",
+    "name": "Traditional Shampoo 200ml",
+    "category": "SHAMPOO",
+    "description": "Traditional chemical-free herbal shampoo formulated with natural ingredients for healthy, strong, and clean hair.",
+    "rating": 4.7,
+    "reviews": 98,
+    "sizeOptions": [
+      {
+        "name": "200ml",
+        "price": 150
+      }
+    ],
+    "inStock": true,
+    "type": "shampoo",
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782471771/traditional_shampoo_gwds4d.jpg"
   },
   {
     "id": "so_neem_aloe",
@@ -6883,7 +6917,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "soap",
-    "image": "/images/herbal_soap.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782471770/neem_alovera_soap_ci6bkl.jpg"
   },
   {
     "id": "so_neem_tulsi",
@@ -6900,7 +6934,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "soap",
-    "image": "/images/herbal_soap.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782471770/Neem_tulasi_soap_b7fk58.jpg"
   },
   {
     "id": "so_vetivert",
@@ -6917,7 +6951,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "soap",
-    "image": "/images/herbal_soap.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782471770/vetivert_soap_dyhkir.jpg"
   },
   {
     "id": "so_cow_milk",
@@ -6934,7 +6968,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "soap",
-    "image": "/images/herbal_soap.png",
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782471770/cowmilk_sandalwood_soap_g69u8g.jpg",
     "badge": "Luxurious"
   },
   {
@@ -6952,7 +6986,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "soap",
-    "image": "/images/herbal_soap.png"
+    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/ZVoiNyot.jpeg"
   },
   {
     "id": "so_panchagavya",
@@ -6969,7 +7003,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "soap",
-    "image": "/images/herbal_soap.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782471770/panchagavya_soap_ujc40v.jpg"
   },
   {
     "id": "so_jasmine",
@@ -6986,7 +7020,24 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "soap",
-    "image": "/images/herbal_soap.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782471770/jasmine_soap_uz9zyv.jpg"
+  },
+  {
+    "id": "so_baby",
+    "name": "Baby Soap",
+    "category": "SOAP",
+    "description": "Gentle, organic, chemical-free handmade soap formulated specifically for soft and sensitive baby skin.",
+    "rating": 4.9,
+    "reviews": 110,
+    "sizeOptions": [
+      {
+        "name": "Standard",
+        "price": 120
+      }
+    ],
+    "inStock": true,
+    "type": "soap",
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782471769/baby_soap_fiyqhb.jpg"
   },
   {
     "id": "oil_coconut_1l",
@@ -7003,7 +7054,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "oil",
-    "image": "/images/groundnut_oil.png"
+    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/XKGQLtJr.webp"
   },
   {
     "id": "oil_groundnut_1l",
@@ -7020,7 +7071,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "oil",
-    "image": "/images/groundnut_oil.png",
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782470906/groundnut_oil_fri6pw.jpg",
     "badge": "Best Seller"
   },
   {
@@ -7038,7 +7089,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "oil",
-    "image": "/images/groundnut_oil.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782470906/groundnut_oil_fri6pw.jpg"
   },
   {
     "id": "oil_safflower_1l",
@@ -7055,7 +7106,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "oil",
-    "image": "/images/groundnut_oil.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782470906/safflower_oil_vi7pvn.jpg"
   },
   {
     "id": "oil_gingelly_1l",
@@ -7072,7 +7123,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "oil",
-    "image": "/images/groundnut_oil.png"
+    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/h8gLj8SY.jpeg"
   },
   {
     "id": "oil_castor_1l",
@@ -7089,7 +7140,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "oil",
-    "image": "/images/groundnut_oil.png"
+    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/DKdazTaM.jpeg"
   },
   {
     "id": "oil_mustard_1l",
@@ -7106,7 +7157,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "oil",
-    "image": "/images/groundnut_oil.png"
+    "image": "https://cdn.dotpe.in/longtail/store-items/4882616/QeBoqwCk.jpeg"
   },
   {
     "id": "oil_olive_1l",
@@ -7123,7 +7174,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "oil",
-    "image": "/images/groundnut_oil.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782470905/olive_oil_idakxw.jpg"
   },
   {
     "id": "oil_sunflower_1l",
@@ -7140,7 +7191,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "oil",
-    "image": "/images/groundnut_oil.png"
+    "image": "https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782470905/sunflower_oil_sw9wfr.jpg"
   },
   {
     "id": "sp_chilli_1kg",
@@ -7157,7 +7208,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "spices",
-    "image": "/images/organic_spices.png"
+    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/byEPq2IX.webp"
   },
   {
     "id": "sp_chilli_pwd_1kg",
@@ -7174,7 +7225,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "spices",
-    "image": "/images/organic_spices.png",
+    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/30b5FEFi.webp",
     "badge": "Pure Spices"
   },
   {
@@ -7192,7 +7243,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "spices",
-    "image": "/images/organic_spices.png"
+    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/8dIuaUbD.webp"
   },
   {
     "id": "sp_cinnamon_50g",
@@ -7209,7 +7260,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "spices",
-    "image": "/images/organic_spices.png"
+    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/ib5Zduru.webp"
   },
   {
     "id": "sp_jeera_250g",
@@ -7226,7 +7277,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "spices",
-    "image": "/images/organic_spices.png"
+    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/k1LFTL6o.webp"
   },
   {
     "id": "sp_cardamom_100g",
@@ -7243,7 +7294,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "spices",
-    "image": "/images/organic_spices.png"
+    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/uYOYwSOh.webp"
   },
   {
     "id": "sp_pepper_100g",
@@ -7260,7 +7311,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "spices",
-    "image": "/images/organic_spices.png"
+    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/uYOYwSOh.webp"
   },
   {
     "id": "sp_mustard_200g",
@@ -7277,7 +7328,7 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "spices",
-    "image": "/images/organic_spices.png"
+    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/uYOYwSOh.webp"
   },
   {
     "id": "sp_dhaniya_250g",
@@ -7294,6 +7345,6 @@ export const PRODUCTS = [
     ],
     "inStock": true,
     "type": "spices",
-    "image": "/images/organic_spices.png"
+    "image": "https://cdn.dotpe.in/longtail/item_thumbnails/4882616/3pK2eA01.webp"
   }
 ];

@@ -7,6 +7,7 @@ export default function Header({
   cartTotalItems,
   searchQuery,
   setSearchQuery,
+  setSelectedCategory,
   onOpenCart
 }) {
   const navigate = useNavigate();
@@ -15,6 +16,9 @@ export default function Header({
   const handleSearchChange = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
+    if (setSelectedCategory) {
+      setSelectedCategory(null);
+    }
     if (query.trim() !== '' && location.pathname !== '/shop') {
       navigate('/shop');
     }
@@ -89,7 +93,12 @@ export default function Header({
             />
             {searchQuery && (
               <button
-                onClick={() => setSearchQuery('')}
+                onClick={() => {
+                  setSearchQuery('');
+                  if (setSelectedCategory) {
+                    setSelectedCategory(null);
+                  }
+                }}
                 className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer text-gray-400 hover:text-gray-600"
               >
                 <X size={12} />
