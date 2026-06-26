@@ -188,7 +188,7 @@ export default function Home() {
             <div className="absolute w-80 h-80 bg-[#b37d4e]/10 rounded-full blur-3xl nature-orb" />
             <div className="relative border-4 border-[#b37d4e]/40 p-4 rounded-full overflow-hidden w-96 h-96 flex items-center justify-center bg-white/5 backdrop-blur-xs float-anim-slow">
               <div className="w-full h-full rounded-full overflow-hidden border border-[#faebdf]/20 bg-white flex items-center justify-center p-1 shadow-inner">
-                <img src={prakruthiLogo} alt="Prakruthi Sedyam Logo" className="w-full h-full object-contain scale-110" />
+                <img src="https://res.cloudinary.com/dhm0xqvnl/image/upload/v1782475439/prakruthi_logo__y4fpp3.png" alt="Prakruthi Sedyam Logo" className="w-full h-full object-contain scale-110" />
               </div>
             </div>
           </div>
@@ -210,8 +210,9 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal direction="up" delay={80}>
-          <div ref={scrollContainerRef} className="flex overflow-x-auto lg:grid lg:grid-cols-9 gap-4 pb-4 px-2 no-scrollbar snap-x snap-mandatory scroll-smooth">
+          <div ref={scrollContainerRef} className="flex overflow-x-auto md:grid md:grid-cols-5 gap-6 pb-4 px-2 no-scrollbar snap-x snap-mandatory scroll-smooth">
             {[
+              { name: "Groceries & Staples", category: "groceries", img: "/images/organic_groceries.png", bg: "bg-amber-50/50" },
               { name: "Cooking Oil", category: "COOKING OIL", img: "/images/groundnut_oil.png", bg: "bg-[#faebdf]" },
               { name: "Ghee", category: "GHEE", img: "/images/cow_ghee.png", bg: "bg-amber-50" },
               { name: "Honey", category: "HONEY", img: "/images/raw_honey.png", bg: "bg-amber-50/40" },
@@ -220,12 +221,12 @@ export default function Home() {
               { name: "Spices & Condiments", category: "spices", img: "/images/organic_spices.png", bg: "bg-red-50" },
               { name: "Personal Care", category: "personal-care", img: "/images/herbal_soap.png", bg: "bg-teal-50" },
               { name: "Clay Cookware", category: "CLAY COOKWARE", img: "/images/clay_pot.png", bg: "bg-orange-50" },
-              { name: "Ready to Cook", category: "READY TO COOK (Dosa mix,Pongal,Flakes..etc)", img: "/images/millet_grains.png", bg: "bg-rose-50" }
+              { name: "Ready to Cook", category: "READY TO COOK (Dosa mix,Pongal,Flakes..etc)", img: "/images/ready_to_cook.png", bg: "bg-rose-50" }
             ].map((item, idx) => (
               <div
                 key={idx}
                 onClick={() => handleFeaturedCategoryClick(item.category)}
-                className="flex-shrink-0 snap-start w-[145px] sm:w-[170px] lg:w-auto group bg-white border border-[#f2ebd9] hover:border-[#2a5a32]/30 p-5 rounded-2xl shadow-xs cursor-pointer transition-all duration-400 flex flex-col items-center justify-between text-center min-h-[210px] category-card-hover"
+                className="flex-shrink-0 snap-start w-[145px] sm:w-[170px] md:w-auto group bg-white border border-[#f2ebd9] hover:border-[#2a5a32]/30 p-5 rounded-2xl shadow-xs cursor-pointer transition-all duration-400 flex flex-col items-center justify-between text-center min-h-[210px] category-card-hover"
               >
                 <div className={`w-24 h-24 ${item.bg} rounded-full overflow-hidden flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-400 border border-[#f2ebd9]/50 shadow-xs`}>
                   <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
@@ -370,9 +371,8 @@ export default function Home() {
               <button
                 key={idx}
                 onClick={() => setTestimonialIndex(idx)}
-                className={`h-2 rounded-full cursor-pointer transition-all duration-300 ${
-                  testimonialIndex === idx ? 'bg-[#d4a373] w-6' : 'bg-white/30 w-2'
-                }`}
+                className={`h-2 rounded-full cursor-pointer transition-all duration-300 ${testimonialIndex === idx ? 'bg-[#d4a373] w-6' : 'bg-white/30 w-2'
+                  }`}
               />
             ))}
           </div>
